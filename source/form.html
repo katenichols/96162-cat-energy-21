@@ -8,9 +8,9 @@
   <body class="page-body">
     <div class="page-container">
       <header class="page-header">
-        <a class="page-header__logo" href="index.html" aria-label="Перейти на главную">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/33x38">
-          <img class="page-header__logo-title logo-title" src="https://via.placeholder.com/101x18" alt="Cat energy">
+        <a class="page-header__logo header-logo" href="index.html" aria-label="Перейти на главную">
+          <img class="header-logo__image" src="https://via.placeholder.com/33x38" alt="">
+          <img class="header-logo__title logo-title" src="https://via.placeholder.com/101x18" alt="Cat energy">
           Cat energy
         </a>
         <nav class="main-nav">
@@ -18,7 +18,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list">
-            <li class="main-nav__list-item">
+            <li class="main-nav__list-item>
               <a href="index.html" aria-label="Перейти на главную">
                 Главная
               </a>
@@ -37,34 +37,35 @@
         </nav>
       </header>
 
+
       <main>
         <h1 class="form-title">Подбор программы</h1>
         <p class="form-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
         <form class="page-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-          <div class="form-info-about-cat">
-            <label class="form-info-about-cat__item-label form-label" for="cat-name">Имя:*</label>
-            <input class="form-info-about-cat__item-input form-text-input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" aria-label="Имя питомца">
-            <label class="form-info-about-cat__item-label form-label" for="cat-weight">Вес (кг):*</label>
-            <input class="form-info-about-cat__item-input form-text-input" type="number" step="any" name="cat-weight" id="cat-weight" placeholder="7" aria-label="Вес питомца">
-            <label class="form-info-about-cat__item-label form-label" for="cat-age">Возраст (лет):</label>
-            <input class="form-info-about-cat__item-input form-text-input" type="number" step="any" name="cat-age" id="cat-age" placeholder="7" aria-label="Возраст питомца">
+          <div class="page-form-info-about-cat info-about-cat">
+            <label class="info-about-cat__label form-label" for="cat-name">Имя:*</label>
+            <input class="info-about-cat__input form-text-input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" aria-label="Имя питомца">
+            <label class="info-about-cat__label form-label" for="cat-weight">Вес (кг):*</label>
+            <input class="info-about-cat__input form-text-input" type="number" step="any" name="cat-weight" id="cat-weight" placeholder="7" aria-label="Вес питомца">
+            <label class="info-about-cat__label form-label" for="cat-age">Возраст (лет):</label>
+            <input class="info-about-cat__input form-text-input" type="number" step="any" name="cat-age" id="cat-age" placeholder="7" aria-label="Возраст питомца">
           </div>
 
           <fieldset class="form-choice-programm form-fieldset">
-            <legend class="visually-hidden">Выбор программы</legend>
-            <ul class="form-choice-programm__list">
-              <li class="form-choice-programm__list-item">
-                <input class="form-choice-programm__list-item-radio" type="radio" name="slim" id="slim" aria-label="Программа Похудение" checked>
-                <label class="form-choice-programm__list-item-label" for="slim">Похудение</label>
+            <legend class="form-choice-programm-legend visually-hidden">Выбор программы</legend>
+            <ul class="form-choice-programm__list programm-list">
+              <li class="programm-list__item">
+                <input class="programm-list__item-radio" type="radio" name="slim" id="slim" aria-label="Программа Похудение" checked>
+                <label class="programm-list__item-label" for="slim">Похудение</label>
               </li>
-              <li class="form-choice-programm__list-item">
-                <input class="form-choice-programm__list-item-radio" type="radio" name="mass" id="mass" aria-label="Программа Набор массы">
-                <label class="form-choice-programm__list-item-label" for="mass">Набор массы</label>
+              <li class="programm-list__item">
+                <input class="programm-list__item-radio" type="radio" name="mass" id="mass" aria-label="Программа Набор массы">
+                <label class="programm-list__item-label" for="mass">Набор массы</label>
               </li>
-              <li class="form-choice-programm__list-item">
-                <input class="form-choice-programm__list-item-radio" type="radio" name="advice" id="advice" aria-label="Попросить совета">
-                <label class="form-choice-programm__list-item-label" for="advice">Не знаю (нужен ваш совет)</label>
+              <li class="programm-list__item">
+                <input class="programm-list__item-radio" type="radio" name="advice" id="advice" aria-label="Попросить совета">
+                <label class="programm-list__item-label" for="advice">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -86,22 +87,22 @@
 
           <fieldset class="form-additionally form-fieldset">
             <legend class="form-additionally__legend form-legend">Дополнительно</legend>
-            <ul class="form-additionally__list">
-              <li class="form-additionally__list-item">
-                <input class="form-additionally__list-item-input" type="checkbox" name="add-item1" id="add-item1" aria-label="Дополнительный товар Сахарозаменитель" checked>
-                <label class="form-additionally__list-item-label" for="add-item1">Сахарозаменитель</label>
+            <ul class="form-additionally__list additionally-list">
+              <li class="additionally-list__item">
+                <input class="additionally-list__item-input" type="checkbox" name="add-item1" id="add-item1" aria-label="Дополнительный товар Сахарозаменитель" checked>
+                <label class="additionally-list__item-label" for="add-item1">Сахарозаменитель</label>
               </li>
-              <li class="form-additionally__list-item">
-                <input class="form-additionally__list-item-input" type="checkbox" name="add-item2" id="add-item2" aria-label="Дополнительный товар Питьевая вода">
-                <label class="form-additionally__list-item-label" for="add-item2">Питьевая вода</label>
+              <li class="additionally-list__item">
+                <input class="additionally-list__item-input" type="checkbox" name="add-item2" id="add-item2" aria-label="Дополнительный товар Питьевая вода">
+                <label class="additionally-list__item-label" for="add-item2">Питьевая вода</label>
               </li>
-              <li class="form-additionally__list-item">
-                <input class="form-additionally__list-item-input" type="checkbox" name="add-item3" id="add-item3" aria-label="Дополнительный товар Молоко">
-                <label class="form-additionally__list-item-label" for="add-item3">Молоко</label>
+              <li class="additionally-list__item">
+                <input class="additionally-list__item-input" type="checkbox" name="add-item3" id="add-item3" aria-label="Дополнительный товар Молоко">
+                <label class="additionally-list__item-label" for="add-item3">Молоко</label>
               </li>
-              <li class="form-additionally__list-item">
-                <input class="form-additionally__list-item-input" type="checkbox" name="add-item4" id="add-item4" aria-label="Дополнительный товар Витамины">
-                <label class="form-additionally__list-item-label" for="add-item4">Витамины</label>
+              <li class="additionally-list__item">
+                <input class="additionally-list__item-input" type="checkbox" name="add-item4" id="add-item4" aria-label="Дополнительный товар Витамины">
+                <label class="additionally-list__item-label" for="add-item4">Витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -111,14 +112,14 @@
         </form>
 
         <section class="page-contacts">
-          <h3 class="visually-hidden">Контакты</h3>
-          <div class="page-contacts__items">
-            <p class="page-contacts__items-title">Приглашаем к сотрудничеству дилеров!</p>
-            <span class="page-contacts__items-street">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="page-contacts__items-sity">Санкт-Петербург</span>
+          <h3 class="page-contacts_title visually-hidden">Контакты</h3>
+          <div class="page-contacts__item contacts-item">
+            <p class="contacts-item__title">Приглашаем к сотрудничеству дилеров!</p>
+            <span class="contacts-item__street">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts-item__sity">Санкт-Петербург</span>
           </div>
-          <div class="page-contacts__map">
-            <div class="page-contacts__map-label">
+          <div class="page-contacts__map contacts-map">
+            <div class="contacts-map__label">
 
             </div>
           </div>
@@ -126,32 +127,33 @@
       </main>
 
       <footer class="page-footer">
-        <div class="page-footer__logotype footer-item">
-          <a class="page-footer__logo" href="index.html" aria-label="Перейти на главную">
-            <img class="page-footer__logo-title logo-title" src="https://via.placeholder.com/128x24" alt="Cat energy">
+        <div class="page-footer__logo footer-item">
+          <a class="page-footer__logo-link footer-logo-link" href="index.html" aria-label="Перейти на главную">
+            <img class="footer-logo-link__title logo-title" src="https://via.placeholder.com/128x24" alt="Cat energy">
             Cat energy
           </a>
         </div>
         <div class="page-footer__social-media footer-item">
-          <ul class="page-footer__social-media-list">
-            <li class="page-footer__social-media-list-item">
-              <a class="page-footer__social-media-link" href="https://m.vk.com" target="blank" aria-label="Перейти во Вконтакте">Вконтакте</a>
+          <ul class="page-footer__social-media-list social-media-list">
+            <li class="social-media-list__item">
+              <a class="social-media-list__item-link" href="https://m.vk.com" target="blank" aria-label="Перейти во Вконтакте">Вконтакте</a>
             </li>
-            <li class="page-footer__social-media-list-item">
-              <a class="page-footer__social-media-link" href="https://m.instagram.com" target="blank" aria-label="Перейти в Инстаграм">Инстаграм</a>
+            <li class="social-media-list__item">
+              <a class="social-media-list__item-link" href="https://m.instagram.com" target="blank" aria-label="Перейти в Инстаграм">Инстаграм</a>
             </li>
-            <li class="page-footer__social-media-list-item">
-              <a class="page-footer__social-media-link" href="https://facebook.com" target="blank" aria-label="Перейти в Фейсбук">Фейсбук</a>
+            <li class="social-media-list__item">
+              <a class="social-media-list__item-link" href="https://facebook.com" target="blank" aria-label="Перейти в Фейсбук">Фейсбук</a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright footer-item">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="blank" aria-label="Перейти на сайт разработчика Html-academy">
+          <a class="page-footer__copyright-link copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="blank" aria-label="Перейти на сайт разработчика Html-academy">
             HTML Academy
-            <span class="page-footer__copyright-link-svg"></span>
+            <span class="copyright-link__svg"></span>
           </a>
         </div>
       </footer>
+
 
     </div>
   </body>
