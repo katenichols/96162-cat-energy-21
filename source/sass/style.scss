@@ -1,1 +1,8 @@
-// Начните писать стили здесь
+@import "global/global.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+
+@import "blocks/page__container.scss";
+@import "blocks/page__body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-promo.scss";
