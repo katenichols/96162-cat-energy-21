@@ -2,7 +2,14 @@
 @import "global/variables.scss";
 @import "global/fonts.scss";
 
-@import "blocks/page__container.scss";
-@import "blocks/page__body.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/page-container.scss";
+@import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-promo.scss";
+
+@import "blocks/main-nav.scss";
+@import "blocks/page-advantages.scss";
+@import "blocks/page-features.scss";
+@import "blocks/page-example.scss";
+@import "blocks/page-contacts.scss";

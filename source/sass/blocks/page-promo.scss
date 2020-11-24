@@ -1,6 +1,12 @@
 .page-promo {
-  background-color: $basic-color;
-  opacity: 0.85;
+  width: 100%;
+  height: auto;
+
+  background-image: url("../img/mobile-promo-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  border: 0;
 }
 
 .page-promo__title {
@@ -23,5 +29,14 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-white;
+}
+
+.page-promo__link {
+  width: 240px;
+  height: 40px;
+
+  line-height: 18px;
+
+  background-color: $basic-color;
 }
 
