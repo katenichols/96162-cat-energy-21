@@ -8,6 +8,14 @@
   color: $basic-black;
 }
 
-.main-nav__list-item a{
+.main-nav__list-item--link {
   color: $basic-black;
+}
+
+.main-nav__list-item--link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__list-item--link:active {
+  opacity: 0.3;
 }

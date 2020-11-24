@@ -1,11 +1,11 @@
 .page-promo {
+  display: block;
   width: 100%;
   height: auto;
 
   background-image: url("../img/mobile-promo-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  content: "";
   border: 0;
 }
 
@@ -32,11 +32,21 @@
 }
 
 .page-promo__link {
-  width: 240px;
-  height: 40px;
+  display: block;
+  width: 88%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
 
   line-height: 18px;
 
   background-color: $basic-color;
 }
 
+.page-promo__link:hover {
+  background-color: $basic-darken-color;
+}
+
+.page-promo__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}

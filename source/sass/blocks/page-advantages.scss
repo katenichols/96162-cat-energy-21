@@ -26,3 +26,7 @@
   font-family: "Oswald";
   color: $basic-black;
 }
+
+.page-advantages__item-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
