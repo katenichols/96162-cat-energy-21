@@ -1,0 +1,52 @@
+.page-promo {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  background-image: url("../img/mobile-promo-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+}
+
+.page-promo__title {
+  font-style: bold;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: $basic-white;
+}
+
+.page-promo__text,
+.page-promo__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+}
+
+.page-promo__link {
+  display: block;
+  width: 88%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+
+  line-height: 18px;
+
+  background-color: $basic-color;
+}
+
+.page-promo__link:hover {
+  background-color: $basic-darken-color;
+}
+
+.page-promo__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}

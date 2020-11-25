@@ -1,0 +1,15 @@
+.header-logo {
+  position: relative;
+
+  display: inline-block;
+  width: 277px;
+  height: 38px;
+}
+
+.header-logo:hover {
+  opacity: 0.8;
+}
+
+.header-logo:active {
+  opacity: 0.6;
+}

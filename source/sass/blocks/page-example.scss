@@ -1,0 +1,52 @@
+.page-example {
+  background-color: $exception-color;
+}
+
+.page-example__title {
+  font-style: bold;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Oswald", sans-serif;
+  color: $basic-black;
+}
+
+.page-example__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: $special-color;
+}
+
+.example-item__number {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", sans-serif;
+  color: $basic-black;
+}
+
+.example-item__text {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial", sans-serif;
+  color: $special-color;
+}
+
+.page-example__conclude {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  color: $basic-black;
+}
+
+.slider-block__slider-before,
+.slider-block__slider-after {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  color: $basic-black;
+}
