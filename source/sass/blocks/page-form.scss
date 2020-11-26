@@ -1,0 +1,46 @@
+.page-form {
+  position: relative;
+
+  outline: 3px solid darkmagenta;
+}
+
+.page-form__fieldset {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Oswald", sans-serif;
+  color: $basic-black;
+}
+
+.page-form__input,
+.page-form__label,
+.page-form__textarea {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: $special-color;
+}
+
+.page-form__label--special {
+  color: $basic-black;
+}
+
+.page-form__button {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  color: $basic-white;
+
+  background-color: $basic-color;
+}
+
+.page-form__note {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  color: $basic-black;
+}
