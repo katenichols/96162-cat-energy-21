@@ -1,3 +1,11 @@
+.page-contacts {
+  outline: 3px solid red;
+}
+
+.page-contacts--form {
+  background-color: $light-lighten-color;
+}
+
 .page-contacts__map {
   width: 320px;
   height: 362px;
