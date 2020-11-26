@@ -1,0 +1,19 @@
+.product-button {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  color: $basic-white;
+
+  background-color: $basic-color;
+}
+
+.product-button--all {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  color: $special-color;
+
+  background-color: $light-lighten-color;
+}
