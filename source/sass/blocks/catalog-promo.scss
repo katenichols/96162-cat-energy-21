@@ -1,0 +1,17 @@
+.catalog-promo {
+  position: relative;
+  width: 280px;
+  height: 289px;
+  background-image: url("../img/mobile-catalog-promo-background.jpg");
+  background-repeat: no-repeat;
+  background-color: $basic-color;
+  outline: 3px solid brown;
+}
+
+.catalog-promo__text {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  color: $basic-white;
+}
