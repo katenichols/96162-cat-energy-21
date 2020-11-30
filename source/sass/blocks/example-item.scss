@@ -1,0 +1,39 @@
+.example-item {
+  position: relative;
+
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.example-item__number {
+  justify-content: space-between;
+  width: 124px;
+  height: 64px;
+  padding-top: 13px;
+
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", sans-serif;
+  color: $basic-black;
+
+  border: 1px solid $light-darken-color;
+  border-radius: 3px;
+}
+
+.example-item__text {
+  position: absolute;
+  top: 50px;
+
+  width: 85px;
+  height: 19px;
+  left: 18px;
+
+  font-style: normal;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial", sans-serif;
+  color: $special-color;
+
+  background-color: $exception-color;
+}

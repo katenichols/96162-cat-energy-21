@@ -1,21 +1,28 @@
-.wrapper {
+.container {
+  position: relative;
+
   min-width: 320px;
+  max-width: 707px;
   margin-right: auto;
   margin-left: auto;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .wrapper {
-    min-width: 708px;
+  .container {
+    min-width: 768px;
+    max-width: 1219px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .wrapper {
-    min-width: 1220px;
+  .container {
+    min-width: 1440px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0;
   }
 }
