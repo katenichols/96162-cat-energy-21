@@ -77,22 +77,22 @@
     width: auto;
     height: 551px;
   }
+
   .slider-block__slider {
     width: 590px;
   }
 
   .slider-block__slider-before,
-.slider-block__slider-after {
+  .slider-block__slider-after {
+    width: 70px;
+    height: 40px;
+    padding-top: 8px;
 
-  width: 70px;
-  height: 40px;
-  padding-top: 8px;
-
-  font-style: normal;
-  font-size: 20px;
-  line-height: 24px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  color: $basic-black;
-}
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: $basic-black;
+  }
 }
