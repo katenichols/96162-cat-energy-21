@@ -1,3 +1,13 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__wrapper {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .contacts__items-title {
   font-style: normal;
   font-size: 16px;
@@ -13,4 +23,25 @@
   line-height: 20px;
   font-family: "Arial", sans-serif;
   color: $special-color;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    height: 202px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    width: 570px;
+    height: 201px;
+
+    background-color: $basic-white;
+  }
 }

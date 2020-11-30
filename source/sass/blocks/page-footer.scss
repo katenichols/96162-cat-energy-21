@@ -1,6 +1,36 @@
 .page-footer {
+  width: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+
   background-color: $light-lighten-color;
   outline: 3px solid darkgreen;
+}
+
+.page-footer__logo,
+.page-footer__social-media {
+  border-bottom: 1px solid $advantages-separator-color;
+}
+
+.page-footer__logo {
+  height: 95px;
+  padding-top: 39px;
+}
+
+.page-footer__social-media {
+  height: 63px;
+}
+
+.page-footer__social-media-list {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 97px;
+  padding-left: 93px;
+}
+
+.page-footer__copyright {
+  height: 78px;
 }
 
 .page-footer__copyright-link {
@@ -13,4 +43,27 @@
 
 .page-footer__copyright-link:active {
   color: rgba(68, 68, 68, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 150px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .page-footer__logo,
+  .page-footer__social-media {
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
 }
