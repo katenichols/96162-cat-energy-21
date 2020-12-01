@@ -1,8 +1,9 @@
 .container {
   position: relative;
 
-  min-width: 320px;
-  max-width: 707px;
+  display: grid;
+  grid-template-columns: 280px;
+  /*width: 280px;*/
   margin-right: auto;
   margin-left: auto;
   padding: 0;
@@ -10,19 +11,14 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    min-width: 768px;
-    max-width: 1219px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0;
+    /*width: 708px;*/
+    grid-template-columns: 708px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    min-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0;
+    /*width: 1220px;*/
+    grid-template-columns: 1220px;
   }
 }
