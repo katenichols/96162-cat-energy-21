@@ -1,0 +1,136 @@
+.slider-block {
+  position: relative;
+  z-index: 2;
+
+  width: 88%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider-photo {
+  position: relative;
+  z-index: 3;
+
+  width: 100%;
+  height: 255px;
+}
+
+.slider-photo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.slider-block__slider {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 228px;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+}
+
+.slider-block__after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%, 0);
+}
+
+.slider-block__slider-before,
+.slider-block__slider-after {
+
+  width: 70px;
+  height: 40px;
+  padding-top: 8px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.slider-block__toggle {
+  position: relative;
+
+  width: 84px;
+  height: 14px;
+  margin-top: 11px;
+
+  background-color: $basic-white;
+  border: 1px solid $light-darken-color;
+  border-radius: 5px;
+}
+
+.slider-block__separator {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+
+  width: 35px;
+  height: 6px;
+
+  background-color: $basic-color;
+  border-radius: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider-block {
+    width: 100%;
+  }
+
+  .slider-photo {
+    width: 354px;
+    height: 551px;
+  }
+
+  .slider-photo img {
+    width: auto;
+    height: 551px;
+  }
+
+  .slider-block__slider {
+    width: 590px;
+  }
+
+  .slider-block__after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translate(0, 0);
+  }
+
+  .slider-block__slider-before,
+  .slider-block__slider-after {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+
+  /*.slider-block__after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+  }*/
+
+  /*.slider-block__slider-before,
+  .slider-block__slider-after {
+
+    width: 70px;
+    height: 40px;
+    padding-top: 8px;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: $basic-black;
+  }*/
+}
