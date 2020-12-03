@@ -1,6 +1,5 @@
 .main-nav {
   display: block;
-  width: 100%;
 }
 
 .main-nav__list {
@@ -97,6 +96,8 @@
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     color: $basic-white;
+
+    background-color: $basic-color;
   }
 
   .main-nav__list-item {

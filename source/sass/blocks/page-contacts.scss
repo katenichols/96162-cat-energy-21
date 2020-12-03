@@ -1,6 +1,5 @@
 .page-contacts {
   position: relative;
-  width: 280px;
   margin-right: auto;
   margin-left: auto;
 
@@ -14,35 +13,38 @@
 .page-contacts__map {
   width: 280px;
   height: 362px;
+  margin-right: auto;
+  margin-left: auto;
+
   background-image: url("../img/mobile-map.jpg");
   background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
-  .page-contacts {
-    width: 708px;
+  .page-contacts__wrapper-device {
+    grid-column: span 4;
   }
 
   .page-contacts__map {
     width: 708px;
     height: 400px;
+
     background-image: url("../img/tablet-map.jpg");
-    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-contacts {
-    width: 1220px;
     height: 400px;
     margin-right: auto;
     margin-left: auto;
   }
 
   .page-contacts__map {
-    width: 1220px;
-    height: 400px;
+    width: 1440px;
+    height: 100%;
+    /*margin-right: auto;
+    margin-left: auto;*/
     background-image: url("../img/desktop-map.jpg");
-    background-repeat: no-repeat;
   }
 }

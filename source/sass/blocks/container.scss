@@ -2,23 +2,31 @@
   position: relative;
 
   display: grid;
-  grid-template-columns: 280px;
-  /*width: 280px;*/
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  max-width: 707px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    /*width: 708px;*/
-    grid-template-columns: 708px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+    max-width: 1219px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    /*width: 1220px;*/
-    grid-template-columns: 1220px;
+    width: 1220px;
+    grid-column-gap: 80px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }

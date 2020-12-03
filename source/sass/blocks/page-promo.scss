@@ -7,11 +7,18 @@
   outline: 3px solid indigo;
 }
 
+.page-promo__wrapper-device {
+  position: relative;
+  grid-column: span 4;
+  display: block;
+}
+
 .page-promo__titles {
   position: relative;
 
   width: 100%;
-  min-height: 320px;
+  min-height: 302px;
+  margin-bottom: 138px;
   padding-top: 27px;
 
   background-image: url("../img/mobile-promo-background.jpg");
@@ -24,7 +31,7 @@
   width: 249px;
   margin-top: 0;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   margin-left: auto;
 
   font-style: bold;
@@ -48,16 +55,10 @@
   color: $basic-white;
 }
 
-.page-promo__text {
-  margin-top: 25px;
-  margin-bottom: 0;
-}
-
 .page-promo__link {
   display: block;
   width: 280px;
   height: 40px;
-  margin-top: 138px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 14px;
@@ -80,7 +81,8 @@
   position: absolute;
   top: 167px;
   left: 50%;
-  transform: translateX(-50%);
+
+  transform: translate(-50%,0);
 }
 
 @media (min-width: $tablet-width) {
@@ -89,23 +91,22 @@
   }
 
   .page-promo__titles {
-    width: 100%;
     min-height: 175px;
-    padding-top: 60px;
+    margin-bottom: 49px;
+    padding-top: 62px;
 
     background-image: none;
   }
 
   .page-promo__title {
     z-index: 2;
+
     width: 414px;
+    margin-bottom: 41px;
     margin-left: 87px;
 
-    font-style: bold;
     font-size: 60px;
     line-height: 60px;
-    font-family: "Oswald", sans-serif;
-    font-weight: normal;
     text-align: left;
     color: $basic-black;
   }
@@ -113,47 +114,33 @@
   .page-promo__text {
     z-index: 2;
 
-    margin-top: 29px;
     margin-left: 88px;
 
-    font-style: normal;
     font-size: 20px;
     line-height: 20px;
-    font-family: "Oswald", sans-serif;
-    font-weight: normal;
     text-align: left;
-    text-transform: uppercase;
     color: $basic-black;
   }
 
   .page-promo__link {
-    z-index: 2;
-    display: block;
     width: 244px;
     height: 54px;
-    margin-top: 49px;
     margin-left: 83px;
-    padding-top: 19px;
-    padding-bottom: 19px;
 
-    line-height: 18px;
-    text-align: center;
-
-    background-color: $basic-color;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .page-promo__image {
-    position: absolute;
     z-index: -1;
-    top: 250px;
-    left: 0;
-    right: 0;
+    top: 263px;
+    left: 1;
 
     width: 709px;
     height: 609px;
-    margin-left: auto;
+    margin-left: 0;
 
-    transform: translateX(0);
+    transform: translate(-1,0);
   }
 }
 
@@ -162,86 +149,46 @@
     min-height: 582px;
   }
 
-  .page-promo__titles {
-    width: 100%;
-    min-height: 175px;
-    padding-top: 116px;
-
-    background-image: none;
-  }
-
-  .page-promo__title {
-    z-index: 2;
-    width: 414px;
-    margin-left: 87px;
-
-    font-style: bold;
-    font-size: 60px;
-    line-height: 60px;
-    font-family: "Oswald", sans-serif;
-    font-weight: normal;
-    text-align: left;
-    color: $basic-black;
-  }
-
-  .page-promo__text {
-    z-index: 2;
-
-    margin-top: 29px;
-    margin-left: 88px;
-
-    font-style: normal;
-    font-size: 20px;
-    line-height: 20px;
-    font-family: "Oswald", sans-serif;
-    font-weight: normal;
-    text-align: left;
-    text-transform: uppercase;
-    color: $basic-black;
-  }
-
-  .page-promo__link {
-    z-index: 2;
-    display: block;
-    width: 244px;
-    height: 54px;
-    margin-top: 49px;
-    margin-left: 82px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-
-    background-color: $basic-color;
-  }
-
-  .page-promo__image {
-    position: absolute;
-    z-index: -1;
-    top: 29px;
-    left: 0;
-    right: 330px;
-
-    width: 552px;
-    height: 499px;
-    margin-left: auto;
-
-    transform: translateX(0);
-  }
-}
-
-@media (min-width: $desktop-width) {
   .page-promo__desktop-background {
     position: absolute;
     z-index: -2;
-    top: -82px;
-    right: -65px;
+    top: -112px;
+    right: -110px;
 
     width: 720px;
     height: 694px;
     background-image: url("../img/desktop-promo-background.jpg");
     background-repeat: no-repeat;
+  }
+
+  .page-promo__titles {
+    margin-bottom: 52px;
+    padding-top: 111px;
+  }
+
+  .page-promo__title {
+    width: 414px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+  }
+
+  .page-promo__text {
+    margin-top: 0;
+    margin-left: 80px;
+  }
+
+  .page-promo__link {
+    margin-left: 80px;
+  }
+
+  .page-promo__image {
+    top: 29px;
+    left: 448px;
+
+    width: 552px;
+    height: 499px;
+    margin-left: 0;
+
+    transform: translate(0,0);
   }
 }

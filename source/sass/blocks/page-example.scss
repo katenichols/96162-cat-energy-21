@@ -1,19 +1,11 @@
 .page-example {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-  padding-top: 27px;
-
   background-color: $exception-color;
   outline: 3px solid darkmagenta;
 }
 
 .page-example__wrapper {
   margin: 0;
-  padding: 0;
+  padding-top: 27px;
 }
 
 .page-example__title {
@@ -28,10 +20,8 @@
 }
 
 .page-example__text {
-  width: 279px;
   margin-top: 0;
-  margin-right: 20px;
-  margin-bottom: 0;
+  margin-bottom: 25px;
 
   font-style: normal;
   font-size: 14px;
@@ -46,16 +36,17 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  width: 280px;
-  margin-top: 25px;
-  margin-right: auto;
-  margin-left: auto;
+
+  width: 100%;
 }
 
 .page-example__list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+
+  width: 279px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0;
 }
 
@@ -70,7 +61,7 @@
 .page-example__conclude {
   margin-top: 26px;
   margin-right: 0;
-  margin-bottom: 42px;
+  margin-bottom: 15px;
   margin-left: 0;
 
   font-style: normal;
@@ -84,63 +75,46 @@
 
 @media (min-width: $tablet-width) {
   .page-example {
-    width: 708px;
-    min-height: 1081px;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-    padding-top: 43px;
-
     background-color: $basic-white;
   }
 
-  .page-example__title {
-    margin-top: 0;
-    margin-bottom: 63px;
-    margin-left: auto;
+  .page-example__wrapper-device {
+    grid-column: span 4;
+  }
 
-    font-style: normal;
+  .page-example__wrapper {
+    padding-top: 43px;
+  }
+
+  .page-example__title {
+    margin-bottom: 63px;
+
     font-size: 60px;
     line-height: 60px;
-    font-family: "Oswald", sans-serif;
-    color: $basic-black;
   }
 
   .page-example__text {
-    width: 702px;
+    margin-bottom: 54px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .page-example__inner-wrapper {
+    flex-direction: row;
+    text-align: center;
+
+    margin-bottom: 59px;
+  }
+
+  .page-example__list {
+    text-align: center;
+
+    width: 366px;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
-
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "Arial", sans-serif;
-    color: $special-color;
-  }
-
-  .page-example__inner-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    margin-top: 54px;
-    margin-right: 0;
-    margin-bottom: 64px;
-    margin-left: 0;
-  }
-
-  .page-example__list {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    width: 366px;
-    margin-top: 0;
-
-    padding: 0;
   }
 
   .page-example__list-item {
@@ -162,7 +136,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-example {
+  .page-example__wrapper-device {
+    display: flex;
     flex-direction: row;
     width: 1220px;
     min-height: 656px;
