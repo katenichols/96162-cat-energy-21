@@ -2,8 +2,6 @@
   position: relative;
   margin-right: auto;
   margin-left: auto;
-
-  outline: 3px solid red;
 }
 
 .page-contacts--form {
@@ -11,13 +9,14 @@
 }
 
 .page-contacts__map {
-  width: 280px;
+  width: auto;
   height: 362px;
   margin-right: auto;
   margin-left: auto;
 
   background-image: url("../img/mobile-map.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,8 +25,7 @@
   }
 
   .page-contacts__map {
-    width: 708px;
-    height: 400px;
+    height: 396px;
 
     background-image: url("../img/tablet-map.jpg");
   }
@@ -41,10 +39,8 @@
   }
 
   .page-contacts__map {
-    width: 1440px;
-    height: 100%;
-    /*margin-right: auto;
-    margin-left: auto;*/
+    height: 400px;
+
     background-image: url("../img/desktop-map.jpg");
   }
 }
