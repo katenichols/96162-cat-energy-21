@@ -1,7 +1,5 @@
 .page-footer {
   width: auto;
-  padding-right: 20px;
-  padding-left: 20px;
   text-align: center;
 
   background-color: $light-lighten-color;
@@ -9,7 +7,7 @@
 
 .page-footer__logo,
 .page-footer__social-media {
-  border-bottom: 1px solid $advantages-separator-color;
+  border-bottom: 1px solid $separator-color;
 }
 
 .page-footer__logo {

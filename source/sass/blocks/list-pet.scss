@@ -1,0 +1,85 @@
+.list-pet {
+  display: block;
+  width: auto;
+}
+
+.list-pet__item-label,
+.list-pet__item-input {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: $special-color;
+}
+
+.list-pet__item-label {
+  margin-right: 17px;
+}
+
+.list-pet__item-input {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+
+  border: 1px solid $input-border-color;
+}
+
+.list-pet__item-input--first {
+  width: 221px;
+  margin-bottom: 14px;
+}
+
+.list-pet__item-input--second {
+  width: 199px;
+  margin-bottom: 14px;
+}
+
+.list-pet__item-input--third {
+  width: 165px;
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .list-pet__item-label,
+  .list-pet__item-input {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .list-pet__item-input--first {
+    width: 566px;
+    margin-bottom: 20px;
+  }
+
+  .list-pet__item-input--second {
+    width: 539px;
+    margin-bottom: 20px;
+  }
+
+  .list-pet__item-input--third {
+    width: 497px;
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .list-pet__item-label,
+  .list-pet__item-input {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .list-pet__item-input--first {
+    width: 506px;
+  }
+
+  .list-pet__item-input--second {
+    width: 478px;
+  }
+
+  .list-pet__item-input--third {
+    width: 436px;
+    margin-bottom: 69px;
+  }
+}

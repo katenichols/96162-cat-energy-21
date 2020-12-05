@@ -54,42 +54,58 @@
           <form class="page-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
             <div class="container">
               <div class="page-form__wrapper-device">
-                <fieldset class="page-form__fieldset">
-                  <legend class="page-form__fieldset-legend visually-hidden">Информация о питомце</legend>
-                  <label class="page-form__label" for="cat-name">Имя:*</label>
-                  <input class="page-form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" aria-label="Имя питомца">
-                  <label class="page-form__label" for="cat-weight">Вес (кг):*</label>
-                  <input class="page-form__input" type="number" step="any" name="cat-weight" id="cat-weight" placeholder="7" aria-label="Вес питомца">
-                  <label class="page-form__label" for="cat-age">Возраст (лет):</label>
-                  <input class="page-form__input" type="number" step="any" name="cat-age" id="cat-age" placeholder="7" aria-label="Возраст питомца">
-                </fieldset>
+                <div class="page-form__fieldsets-group">
+                  <fieldset class="page-form__fieldset">
+                    <legend class="page-form__fieldset-legend visually-hidden">Информация о питомце</legend>
+                    <ul class="page-form__fieldset-list list-pet">
+                      <li class="list-pet__item">
+                        <label class="list-pet__item-label" for="cat-name">Имя:*</label>
+                        <input class="list-pet__item-input list-pet__item-input--first" type="text" name="cat-name" id="cat-name" placeholder="Барсик" aria-label="Имя питомца">
+                      </li>
+                      <li class="list-pet__item">
+                        <label class="list-pet__item-label" for="cat-weight">Вес (кг):*</label>
+                        <input class="list-pet__item-input list-pet__item-input--second" type="number" step="any" name="cat-weight" id="cat-weight" placeholder="7" aria-label="Вес питомца">
+                      </li>
+                      <li class="list-pet__item">
+                        <label class="list-pet__item-label" for="cat-age">Возраст (лет):</label>
+                        <input class="list-pet__item-input list-pet__item-input--third" type="number" step="any" name="cat-age" id="cat-age" placeholder="7" aria-label="Возраст питомца">
+                      </li>
+                    </ul>
+                  </fieldset>
 
-                <fieldset class="page-form__fieldset">
-                  <legend class="page-form__fieldset-legend visually-hidden">Выбор программы</legend>
-                  <ul class="page-form__fieldset-list">
-                    <li class="page-form__fieldset-list-item">
-                      <input class="page-form__input" type="radio" name="slim" id="slim" aria-label="Программа Похудение" checked>
-                      <label class="page-form__label" for="slim">Похудение</label>
-                    </li>
-                    <li class="page-form__fieldset-list-item">
-                      <input class="page-form__input" type="radio" name="mass" id="mass" aria-label="Программа Набор массы">
-                      <label class="page-form__label" for="mass">Набор массы</label>
-                    </li>
-                    <li class="page-form__fieldset-list-item">
-                      <input class="page-form__input" type="radio" name="advice" id="advice" aria-label="Попросить совета">
-                      <label class="page-form__label" for="advice">Не знаю (нужен ваш совет)</label>
-                    </li>
-                  </ul>
-                </fieldset>
+                  <fieldset class="page-form__fieldset page-form__fieldset--border">
+                    <legend class="page-form__fieldset-legend visually-hidden">Выбор программы</legend>
+                    <ul class="page-form__fieldset-list list-programm">
+                      <li class="page-form__fieldset-list-item list-programm__item">
+                        <input class="page-form__input" type="radio" name="slim" id="slim" aria-label="Программа Похудение" checked>
+                        <label class="page-form__label" for="slim">Похудение</label>
+                      </li>
+                      <li class="page-form__fieldset-list-item list-programm__item">
+                        <input class="page-form__input" type="radio" name="mass" id="mass" aria-label="Программа Набор массы">
+                        <label class="page-form__label" for="mass">Набор массы</label>
+                      </li>
+                      <li class="page-form__fieldset-list-item list-programm__item">
+                        <input class="page-form__input" type="radio" name="advice" id="advice" aria-label="Попросить совета">
+                        <label class="page-form__label" for="advice">Не знаю (нужен ваш совет)</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
 
                 <fieldset class="page-form__fieldset">
                   <legend class="page-form__fieldset-legend">Контактные данные (владельца кота)</legend>
-                  <label class="page-form__label" for="client-email">E-mail:*</label>
-                  <input class="page-form__input" type="email" name="client-email" id="client-email" placeholder="kuklachev@gmail.com" aria-label="Введите email">
-                  <span class="page-form__input--svg"></span>
-                  <label class="page-form__label" for="client-phone">Телефон:*</label>
-                  <input class="page-form__input" type="tel" name="client-phone" id="client-phone" placeholder="8 (960) 900-60-90" aria-label="Введите номер телефона">
-                  <span class="page-from__input--svg"></span>
+                  <ul class="page-form__fieldset-list list-contacts">
+                    <li class="page-form__fieldset-list-item list-contacts__item">
+                      <label class="page-form__label" for="client-email">E-mail:*</label>
+                      <input class="page-form__input" type="email" name="client-email" id="client-email" placeholder="kuklachev@gmail.com" aria-label="Введите email">
+                      <span class="page-form__input--svg"></span>
+                    </li>
+                    <li class="page-form__fieldset-list-item list-contacts__item">
+                      <label class="page-form__label" for="client-phone">Телефон:*</label>
+                      <input class="page-form__input" type="tel" name="client-phone" id="client-phone" placeholder="8 (960) 900-60-90" aria-label="Введите номер телефона">
+                      <span class="page-from__input--svg"></span>
+                    </li>
+                  </ul>
                 </fieldset>
 
                 <fieldset class="page-form__fieldset">
@@ -99,20 +115,20 @@
 
                 <fieldset class="page-form__fieldset">
                   <legend class="page-form__fieldset-legend">Дополнительно</legend>
-                  <ul class="page-form__fieldset-list">
-                    <li class="page-form__fieldset-list-item">
+                  <ul class="page-form__fieldset-list list-other-goods">
+                    <li class="page-form__fieldset-list-item list-other-goods__item">
                       <input class="page-form__input" type="checkbox" name="add-item1" id="add-item1" aria-label="Дополнительный товар Сахарозаменитель" checked>
                       <label class="page-form__label page-form__label--special" for="add-item1">Сахарозаменитель</label>
                     </li>
-                    <li class="page-form__fieldset-list-item">
+                    <li class="page-form__fieldset-list-item list-other-goods__item">
                       <input class="page-form__input" type="checkbox" name="add-item2" id="add-item2" aria-label="Дополнительный товар Питьевая вода">
                       <label class="page-form__label page-form__label--speciall" for="add-item2">Питьевая вода</label>
                     </li>
-                    <li class="page-form__fieldset-list-item">
+                    <li class="page-form__fieldset-list-item list-other-goods__item">
                       <input class="page-form__input" type="checkbox" name="add-item3" id="add-item3" aria-label="Дополнительный товар Молоко">
                       <label class="page-form__label page-form__label--special" for="add-item3">Молоко</label>
                     </li>
-                    <li class="page-form__fieldset-list-item">
+                    <li class="page-form__fieldset-list-item list-other-goods__item">
                       <input class="page-form__input" type="checkbox" name="add-item4" id="add-item4" aria-label="Дополнительный товар Витамины">
                       <label class="page-form__label page-form__label--special" for="add-item4">Витамины</label>
                     </li>

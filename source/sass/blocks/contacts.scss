@@ -1,18 +1,16 @@
 .contacts {
-  /*display: grid;
-  grid-template-columns: 1fr 1fr;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .contacts__wrapper {
-  width: 140px;
+  max-width: 140px;
   margin-top: 27px;
 }
 
 .contacts__items-title {
-  width: 140px;
+  max-width: 140px;
   margin-top: 33px;
   margin-bottom: 27px;
 

@@ -1,11 +1,56 @@
 .main-catalog {
+  position: relative;
+
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+
   outline: 3px solid yellow;
 }
 
+.main-catalog__wrapper-device {
+  position: relative;
+
+  display: block;
+  padding-top: 0;
+}
+
 .main-catalog__title {
+  margin-top: 27px;
+  margin-bottom: 40px;
+
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
   font-family: "Oswald", sans-serif;
   color: $basic-black;
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog {
+    margin-bottom: 68px;
+  }
+
+  .main-catalog__wrapper-device {
+    grid-column: span 4;
+  }
+
+  .main-catalog__title {
+    margin-top: 64px;
+    margin-bottom: 83px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog {
+    margin-bottom: 75px;
+  }
+
+  .main-catalog__title {
+    margin-top: 74px;
+    margin-bottom: 84px;
+  }
 }

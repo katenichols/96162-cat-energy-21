@@ -1,5 +1,11 @@
 .page-form-titles__wrapper-device {
   position: relative;
-  grid-column: span 4;
+
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .page-form-titles__wrapper-device {
+    grid-column: span 4;
+  }
 }
