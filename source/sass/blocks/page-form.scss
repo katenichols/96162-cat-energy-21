@@ -4,6 +4,12 @@
   outline: 3px solid darkmagenta;
 }
 
+.page-form__wrapper-device {
+  position: relative;
+  grid-column: span 4;
+  display: block;
+}
+
 .page-form__fieldset {
   font-style: normal;
   font-size: 24px;
