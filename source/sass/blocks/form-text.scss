@@ -1,7 +1,22 @@
 .form-text {
+  width: 226px;
+  margin-top: 0;
+  margin-bottom: 39px;
+
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
   color: $basic-black;
+}
+
+@media (min-width: $tablet-width) {
+  .form-text {
+    width: 323px;
+    margin-bottom: 66px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -1,7 +1,27 @@
 .page-title {
+  margin-top: 27px;
+  margin-bottom: 37px;
+
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
   font-family: "Oswald", sans-serif;
   color: $basic-black;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    margin-top: 64px;
+    margin-bottom: 54px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    margin-top: 74px;
+    margin-bottom: 56px;
+  }
 }

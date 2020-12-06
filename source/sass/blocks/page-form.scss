@@ -6,27 +6,31 @@
 
 .page-form__wrapper-device {
   position: relative;
-  grid-column: span 4;
   display: block;
 }
 
 .page-form__fieldset {
+  display: block;
+  margin: 0;
+  padding: 0;
+
   font-style: normal;
   font-size: 24px;
   line-height: 26px;
   font-family: "Oswald", sans-serif;
   color: $basic-black;
+
+  border: 0;
 }
 
-.page-form__input,
-.page-form__label,
-.page-form__textarea {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  color: $special-color;
+.page-form__fieldset--border {
+  border-top: 1px solid $separator-color;
+  border-bottom: 1px solid $separator-color;
+}
+
+.page-form__fieldset-list {
+  margin: 0;
+  padding: 0;
 }
 
 .page-form__label--special {
@@ -49,4 +53,26 @@
   line-height: 16px;
   font-family: "Arial", sans-serif;
   color: $basic-black;
+}
+
+@media (min-width: $tablet-width) {
+  .page-form__wrapper-device {
+    grid-column: span 4;
+  }
+
+  .page-form__fieldset--border {
+    border: 1px solid $input-border-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form__fieldsets-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-form__fieldset--border {
+    width: 570px;
+    height: 196px;
+  }
 }

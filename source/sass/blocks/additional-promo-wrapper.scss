@@ -1,0 +1,12 @@
+@media (min-width: $desktop-width) {
+  .additional-promo-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 80px;
+
+    width: 1220px;
+    margin-right: auto;
+    margin-bottom: 86px;
+    margin-left: auto;
+  }
+}

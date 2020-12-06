@@ -1,4 +1,4 @@
-.container {
+.container-inner {
   position: relative;
 
   display: grid;
@@ -13,7 +13,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .container {
+  .container-inner {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 60px;
     max-width: 1219px;
@@ -23,9 +24,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .container {
-    width: 1220px;
-    grid-column-gap: 80px;
+  .container-inner {
+    display: block;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
     padding-right: 0;
     padding-left: 0;
   }
