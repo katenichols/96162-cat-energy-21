@@ -55,11 +55,13 @@
   margin-left: 0;
 }
 
-.page-example__conclude {
+.page-example__conclude-wrapper {
+  display: flex;
+  width: 188px;
   margin-top: 26px;
-  margin-right: 0;
+  margin-right: auto;
   margin-bottom: 15px;
-  margin-left: 0;
+  margin-left: auto;
 
   font-style: normal;
   font-size: 14px;
@@ -70,9 +72,14 @@
   color: $basic-black;
 }
 
+.page-example__conclude-left,
+.page-example__conclude-right {
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .page-example {
-    background-color: $basic-white;
+    background: linear-gradient(to top, $exception-color 43%, $basic-white 43%, $basic-white 100%);
   }
 
   .page-example__wrapper-device {
@@ -80,6 +87,10 @@
   }
 
   .page-example__wrapper {
+    padding-top: 0;
+  }
+
+  .page-example__wrapper:first-of-type {
     padding-top: 43px;
   }
 
@@ -122,9 +133,13 @@
     margin-left: 0;
   }
 
-  .page-example__conclude {
+  .page-example__conclude-wrapper {
+    flex-direction: column;
+
     width: 174px;
     margin-top: 13px;
+    margin-right: 0;
+    margin-left: 0;
 
     font-size: 20px;
     line-height: 20px;
@@ -133,20 +148,52 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-example {
+    background: linear-gradient(to top, $light-lighten-color 70%, $basic-white 70%, $basic-white 100%);
+  }
+
   .page-example__wrapper-device {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 1220px;
     min-height: 656px;
     margin-right: auto;
     margin-left: auto;
   }
 
+  .page-example__wrapper:first-of-type {
+    margin-top: 58px;
+    padding-top: 0;
+  }
+
+  .page-example__wrapper:last-of-type {
+    width: 650px;
+  }
+
   .page-example__inner-wrapper {
     flex-direction: column;
+
+    height: 152px;
+    margin-bottom: 0;
+  }
+
+  .page-example__title {
+    margin-bottom: 146px;
   }
 
   .page-example__text {
     width: 436px;
+    margin-bottom: 69px;
+  }
+
+  .page-example__conclude-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 327px;
+    margin-top: 0;
+
+    text-align: left;
   }
 }

@@ -19,8 +19,9 @@
 
 .main-nav__list-item {
   display: block;
-  height: 66px;
+  min-height: 36px;
   padding-top: 22px;
+  padding-bottom: 23px;
 
   box-sizing: border-box;
   border-top: 1px solid $border-line-color;
@@ -96,8 +97,6 @@
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     color: $basic-white;
-
-    background-color: $basic-color;
   }
 
   .main-nav__list-item {

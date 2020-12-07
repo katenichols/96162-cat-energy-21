@@ -5,6 +5,20 @@
   margin-bottom: 0;
 }
 
+.page-promo__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 302px;
+
+  background-image: url("../img/desktop-promo-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+}
+
 .page-promo__wrapper-device {
   position: relative;
   grid-column: span 4;
@@ -13,16 +27,12 @@
 
 .page-promo__titles {
   position: relative;
+  z-index: 1;
 
   width: 100%;
   min-height: 302px;
   margin-bottom: 138px;
   padding-top: 27px;
-
-  background-image: url("../img/mobile-promo-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 0;
 }
 
 .page-promo__title {
@@ -59,8 +69,8 @@
   height: 40px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   line-height: 18px;
 
@@ -79,6 +89,7 @@
   position: absolute;
   top: 167px;
   left: 50%;
+  z-index: 0;
 
   transform: translate(-50%, 0);
 }
@@ -86,6 +97,10 @@
 @media (min-width: $tablet-width) {
   .page-promo {
     min-height: 872px;
+  }
+
+  .page-promo__background {
+    display: none;
   }
 
   .page-promo__titles {
@@ -147,12 +162,12 @@
     min-height: 582px;
   }
 
-  .page-promo__desktop-background {
-    position: absolute;
-    z-index: -2;
+  .page-promo__background {
     top: -112px;
-    right: -110px;
+    left: 50%;
+    z-index: -2;
 
+    display: block;
     width: 720px;
     height: 694px;
     background-image: url("../img/desktop-promo-background.jpg");

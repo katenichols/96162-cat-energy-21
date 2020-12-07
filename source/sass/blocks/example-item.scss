@@ -64,3 +64,9 @@
     width: 144px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example-item__text {
+    background-color: $light-lighten-color;
+  }
+}

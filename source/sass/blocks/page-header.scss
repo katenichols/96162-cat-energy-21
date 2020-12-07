@@ -63,7 +63,12 @@
   .page-header__logo {
     width: 174px;
     height: 52px;
+    margin-top: 4px;
     margin-right: 0;
+  }
+
+  .page-header__menu-toggle {
+    display: none;
   }
 }
 
