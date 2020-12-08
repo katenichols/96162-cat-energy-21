@@ -47,8 +47,8 @@
 .slider-block__slider-before,
 .slider-block__slider-after {
 
-  width: 70px;
-  height: 40px;
+  width: 38px;
+  height: 32px;
   padding-top: 8px;
 
   font-style: normal;
@@ -57,6 +57,18 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: $basic-black;
+
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
+}
+
+.slider-block__slider-before:hover,
+.slider-block__slider-after:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.slider-block__slider-before:active,
+.slider-block__slider-after:active {
+  border-bottom: 0;
 }
 
 .slider-block__toggle {
@@ -116,6 +128,17 @@
     border-color: $slider-scale-color;
   }
 
+  .slider-block__separator {
+    top: -2px;
+    left: 213px;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: $basic-color;
+    border-radius: 8px;
+  }
+
   .slider-block__separator-border-1 {
     position: absolute;
     top: -14px;
@@ -129,15 +152,13 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
   }
 
-  .slider-block__separator {
-    top: -2px;
-    left: 213px;
+  .slider-block__separator-border-1:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+  }
 
-    width: 8px;
-    height: 8px;
-
+  .slider-block__separator-border-1:active {
     background-color: $basic-color;
-    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   }
 
   .slider-block__separator-border-2 {

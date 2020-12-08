@@ -102,8 +102,18 @@
   color: $basic-black;
 }
 
+.page-advantages__item-link--svg:hover {
+  width: 32px;
+}
+
 .page-advantages__item-link:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.page-advantages__item-link--svg:active {
+  width: 32px;
+  fill-opacity: 0.3;
+  stroke-opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
