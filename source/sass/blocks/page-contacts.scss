@@ -22,10 +22,11 @@
 @media (min-width: $tablet-width) {
   .page-contacts__wrapper-device {
     grid-column: span 4;
+    height: 200px;
   }
 
   .page-contacts__map {
-    height: 396px;
+    height: 400px;
 
     background-image: url("../img/tablet-map.jpg");
   }
@@ -38,8 +39,15 @@
     margin-left: auto;
   }
 
+  .page-contacts__wrapper-device {
+    position: relative;
+    height: 0;
+  }
+
   .page-contacts__map {
     height: 400px;
+    margin-right: 0;
+    margin-left: 0;
 
     background-image: url("../img/desktop-map.jpg");
   }

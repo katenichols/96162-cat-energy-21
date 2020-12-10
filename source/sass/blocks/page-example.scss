@@ -99,13 +99,15 @@
   }
 
   .page-example__title {
-    margin-bottom: 63px;
+    margin-bottom: 64px;
 
     font-size: 60px;
     line-height: 60px;
+    letter-spacing: -2px;
   }
 
   .page-example__text {
+    width: 700px;
     margin-bottom: 54px;
 
     font-size: 16px;
@@ -139,9 +141,11 @@
 
   .page-example__conclude-wrapper {
     flex-direction: column;
+    justify-content: space-between;
 
     width: 174px;
-    margin-top: 13px;
+    height: 49px;
+    margin-top: 11px;
     margin-right: 0;
     margin-left: 0;
 
@@ -194,10 +198,17 @@
   .page-example__conclude-wrapper {
     flex-direction: row;
     justify-content: space-between;
+    text-align: left;
 
     width: 327px;
+    height: 20px;
     margin-top: 0;
+    margin-bottom: 0;
+  }
 
-    text-align: left;
+  .page-example__conclude-left,
+  .page-example__conclude-right {
+    height: 20px;
+    padding: 0;
   }
 }

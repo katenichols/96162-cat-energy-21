@@ -98,6 +98,7 @@
 
   .page-footer__copyright {
     height: auto;
+    margin-top: -6px;
   }
 
   .page-footer__copyright-link {
@@ -107,8 +108,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
-    padding-right: 110px;
-    padding-left: 110px;
+  .page-footer__logo {
+    margin-top: 2px;
+  }
+
+  .page-footer__copyright-link {
+    margin-top: 4px;
+  }
+
+  .page-footer__copyright-link--svg-fill {
+    margin-top: 9px;
   }
 }

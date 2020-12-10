@@ -12,7 +12,10 @@
 
 @media (min-width: $tablet-width) {
   .social-media-list {
-    min-width: 129px;
+    width: 133px;
+    height: 37px;
+    margin-top: -4px;
+    margin-left: 20px;
     padding: 0;
   }
 
@@ -29,5 +32,17 @@
   .social-media-list__item-link--icon-fb {
     width: 28px;
     height: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-media-list {
+    width: 130px;
+    margin-top: 2px;
+    margin-left: 23px;
+  }
+
+  .social-media-list__item-link--icon-insta {
+    margin-left: 6px;
   }
 }

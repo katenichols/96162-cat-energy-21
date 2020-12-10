@@ -40,15 +40,15 @@
 @media (min-width: $tablet-width) {
   .example-item__number {
     width: 162px;
-    height: 77px;
-    padding-top: 15px;
+    height: 72px;
+    padding-top: 14px;
 
     font-size: 30px;
     line-height: 37px;
   }
 
   .example-item__text {
-    top: 68px;
+    top: 63px;
 
     width: 114px;
     height: 19px;
@@ -68,6 +68,8 @@
 
 @media (min-width: $desktop-width) {
   .example-item__text {
+    top: 65px;
+
     background-color: $light-lighten-color;
   }
 }

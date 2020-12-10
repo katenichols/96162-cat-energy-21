@@ -5,7 +5,7 @@
 .page-features__title {
   grid-column: span 4;
   margin-top: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 
   font-style: normal;
   font-size: 36px;
@@ -49,6 +49,7 @@
 
     font-size: 60px;
     line-height: 60px;
+    letter-spacing: -2px;
   }
 
   .page-features__list {
@@ -56,50 +57,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
+
     margin: 0;
     padding: 0;
-  }
-
-  .page-feature__list-item {
-    position: relative;
-    flex-direction: column;
-
-    height: 235px;
-    margin-bottom: 0;
-  }
-
-  .page-feature__list-item:first-child {
-    margin-right: 95px;
-    margin-bottom: 82px;
-
-    background-image: url("../img/features-block1.svg");
-    background-repeat: no-repeat;
-    background-position: right 0;
-  }
-
-  .page-feature__list-item:nth-child(2) {
-    margin-right: 74px;
-
-    background-image: url("../img/features-block2.svg");
-    background-repeat: no-repeat;
-    background-position: right 0;
-  }
-
-  .page-feature__list-item:nth-child(3) {
-    margin-right: 78px;
-    margin-bottom: 60px;
-
-    background-image: url("../img/features-block3.svg");
-    background-repeat: no-repeat;
-    background-position: right 0;
-  }
-
-  .page-feature__list-item:nth-child(4) {
-    margin-right: 74px;
-
-    background-image: url("../img/features-block4.svg");
-    background-repeat: no-repeat;
-    background-position: right 0;
   }
 }
 
@@ -127,7 +87,6 @@
   }
 
   .page-feature__list-item:first-child {
-    margin-right: 36px;
     margin-bottom: 0;
   }
 

@@ -15,7 +15,7 @@
 }
 
 .page-advantages__item {
-  padding-bottom: 18px;
+  padding-bottom: 20px;
 
   background-color: $light-lighten-color;
 }
@@ -81,6 +81,10 @@
   color: $special-color;
 }
 
+.page-advantages__item-text--last {
+  margin-bottom: 22px;
+}
+
 .page-advantages__item-separator {
   width: 240px;
   height: 1px;
@@ -91,8 +95,11 @@
 }
 
 .page-advantages__item-link {
-  width: 134px;
-  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 125px;
+  height: 17px;
   margin-left: 19px;
 
   font-style: normal;
@@ -101,10 +108,6 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: $basic-black;
-}
-
-.page-advantages__item-link--text {
-  margin-right: 12px;
 }
 
 .page-advantages__item-link:hover + .page-advantages__item-link--svg {
@@ -122,16 +125,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-advantages {
+    margin-top: 0;
+  }
+
   .page-advantages__wrapper-device {
     grid-column: span 4;
   }
 
   .page-advantages__item {
-    padding-bottom: 53px;
+    padding-bottom: 65px;
+  }
+
+  .page-advantages__item:first-of-type {
+    margin-bottom: 30px;
+  }
+
+  .page-advantages__item:last-of-type {
+    padding-top: 18px;
   }
 
   .page-advantages__item-wrapper-first {
-    margin-top: 56px;
+    margin-top: 55px;
     margin-left: 52px;
   }
 
@@ -145,7 +160,7 @@
   }
 
   .page-advantages__item-image--first {
-    top: 0;
+    top: 2px;
     right: 62px;
 
     width: 200px;
@@ -154,7 +169,7 @@
   }
 
   .page-advantages__item-image--last {
-    top: 0;
+    top: 13px;
     right: 28px;
 
     width: 268px;
@@ -170,13 +185,18 @@
   }
 
   .page-advantages__item-text {
+    width: 377px;
     margin-top: 24px;
-    margin-right: 317px;
-    margin-bottom: 48px;
-    margin-left: 53px;
+    margin-bottom: 58px;
+    margin-left: 52px;
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .page-advantages__item-text--last {
+    width: 342px;
+    margin-right: 19px;
   }
 
   .page-advantages__item-separator {
@@ -189,12 +209,17 @@
   }
 
   .page-advantages__item-link {
-    width: 161px;
-    height: 38px;
+    width: 155px;
+    height: 17px;
+    margin-bottom: 0;
     margin-left: 52px;
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .page-advantages__item-link--text {
+    /*margin-right: 19px;*/
   }
 }
 
@@ -260,6 +285,7 @@
   }
 
   .page-advantages__item-text {
+    width: 467px;
     margin-top: 39px;
     margin-right: 51px;
     margin-bottom: 23px;
@@ -276,7 +302,7 @@
   }
 
   .page-advantages__item-link {
-    width: 168px;
+    width: 160px;
     height: 38px;
     margin-left: 52px;
     margin-bottom: 0;
