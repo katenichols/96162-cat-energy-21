@@ -5,7 +5,7 @@
 .example-item__number {
   justify-content: space-between;
   width: 124px;
-  height: 64px;
+  height: 57px;
   padding-top: 13px;
 
   font-style: normal;
@@ -13,6 +13,7 @@
   line-height: 24px;
   font-family: "Oswald", sans-serif;
   color: $basic-black;
+  text-transform: uppercase;
 
   border: 1px solid $light-darken-color;
   border-radius: 3px;
@@ -20,11 +21,11 @@
 
 .example-item__text {
   position: absolute;
-  top: 50px;
+  top: 48px;
+  left: 20px;
 
-  width: 85px;
+  width: 80px;
   height: 19px;
-  left: 18px;
 
   font-style: normal;
   font-size: 12px;

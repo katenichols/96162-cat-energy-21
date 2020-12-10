@@ -9,16 +9,18 @@
 
 .page-example__title {
   margin-top: 0;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   font-style: normal;
   font-size: 36px;
   line-height: 40px;
   font-family: "Oswald", sans-serif;
+  letter-spacing: -1px;
   color: $basic-black;
 }
 
 .page-example__text {
+  width: 279px;
   margin-top: 0;
   margin-bottom: 25px;
 
@@ -37,6 +39,7 @@
   text-align: center;
 
   width: 100%;
+  margin-top: 0;
 }
 
 .page-example__list {
@@ -44,6 +47,7 @@
   justify-content: space-between;
 
   width: auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -58,7 +62,7 @@
 .page-example__conclude-wrapper {
   display: flex;
   width: 188px;
-  margin-top: 26px;
+  margin-top: 33px;
   margin-right: auto;
   margin-bottom: 15px;
   margin-left: auto;

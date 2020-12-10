@@ -15,7 +15,7 @@
 }
 
 .page-advantages__item {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 
   background-color: $light-lighten-color;
 }
@@ -50,11 +50,11 @@
 }
 
 .page-advantages__item-image--last {
-  margin-right: 13px;
+  margin-right: 12px;
 }
 
 .page-advantages__item-title {
-  min-width: 137px;
+  min-width: 110px;
   margin-top: 0;
   margin-right: 20px;
   margin-bottom: 0;
@@ -63,6 +63,7 @@
   font-size: 24px;
   line-height: 37px;
   font-family: "Oswald", sans-serif;
+  letter-spacing: -1px;
   text-transform: uppercase;
   color: $basic-black;
 }
@@ -70,7 +71,7 @@
 .page-advantages__item-text {
   margin-top: 22px;
   margin-right: 20px;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   margin-left: 20px;
 
   font-style: normal;
@@ -84,7 +85,7 @@
   width: 240px;
   height: 1px;
   margin-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   background-color: $separator-color;
 }
@@ -102,7 +103,11 @@
   color: $basic-black;
 }
 
-.page-advantages__item-link--svg:hover {
+.page-advantages__item-link--text {
+  margin-right: 12px;
+}
+
+.page-advantages__item-link:hover + .page-advantages__item-link--svg {
   width: 32px;
 }
 
@@ -110,7 +115,7 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.page-advantages__item-link--svg:active {
+.page-advantages__item-link:active + .page-advantages__item-link--svg {
   width: 32px;
   fill-opacity: 0.3;
   stroke-opacity: 0.3;

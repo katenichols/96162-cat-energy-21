@@ -12,7 +12,7 @@
 
 .page-footer__logo {
   height: 95px;
-  padding-top: 39px;
+  padding-top: 38px;
 }
 
 .page-footer__social-media {
@@ -53,7 +53,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 22px;
+  padding-top: 17px;
 
   font-style: normal;
   font-size: 16px;
@@ -62,8 +62,9 @@
   color: $special-color;
 }
 
-.page-footer__copyright-link--svg {
-  fill-opacity: 0;
+.page-footer__copyright-link--svg-fill {
+  margin-top: 3px;
+  fill-opacity: 1;
 }
 
 .page-footer__copyright-link:active {
