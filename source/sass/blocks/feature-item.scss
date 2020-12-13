@@ -30,7 +30,7 @@
   .feature-item__svg {
     width: 80px;
     height: 80px;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
   }
 
   .feature-item__text {
@@ -56,9 +56,8 @@
   }
 
   .feature-item:nth-child(3) {
-    height: 225px;
     margin-right: 78px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
     background-image: url("../img/features-block3.svg");
     background-repeat: no-repeat;
@@ -66,7 +65,6 @@
   }
 
   .feature-item:nth-child(4) {
-    height: 225px;
     margin-right: 74px;
 
     background-image: url("../img/features-block4.svg");

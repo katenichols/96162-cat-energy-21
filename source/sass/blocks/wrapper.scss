@@ -1,15 +1,8 @@
 .wrapper {
   position: relative;
 
-  width: 320px;
-  /*padding-right: 10px;
-  padding-left: 10px;*/
-}
-
-@media (min-width: $tablet-width) {
-  .wrapper {
-    width: 768px;
-  }
+  padding-right: auto;
+  padding-left: auto;
 }
 
 @media (min-width: $desktop-width) {

@@ -22,7 +22,6 @@
 .page-promo__wrapper-device {
   position: relative;
   grid-column: span 4;
-  display: block;
 }
 
 .page-promo__titles {
@@ -31,7 +30,7 @@
 
   width: 100%;
   min-height: 302px;
-  margin-bottom: 138px;
+  margin-bottom: 137px;
   padding-top: 27px;
 }
 
@@ -91,6 +90,11 @@
   left: 50%;
   z-index: 0;
 
+  width: 280px;
+  height: 270px;
+
+  background-image: url("../img/mobile-promo-content.png");
+  background-repeat: no-repeat;
   transform: translate(-50%, 0);
 }
 
@@ -155,8 +159,8 @@
 
     width: 709px;
     height: 609px;
-    margin-left: 0;
 
+    background-image: url("../img/tablet-promo-content.jpg");
     transform: translate(-1, 0);
   }
 }
@@ -205,8 +209,8 @@
 
     width: 552px;
     height: 499px;
-    margin-left: 0;
 
+    background-image: url("../img/desktop-promo-content.png");
     transform: translate(0, 0);
   }
 }

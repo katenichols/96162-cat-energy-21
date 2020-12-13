@@ -7,3 +7,15 @@
 
   border: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .page-body {
+    padding-top: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-body {
+    padding-top: 53px;
+  }
+}

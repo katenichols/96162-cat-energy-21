@@ -21,10 +21,10 @@
 
 .example-item__text {
   position: absolute;
-  top: 48px;
+  top: 47px;
   left: 20px;
 
-  width: 80px;
+  width: 82px;
   height: 19px;
 
   font-style: normal;
@@ -68,7 +68,7 @@
 
 @media (min-width: $desktop-width) {
   .example-item__text {
-    top: 65px;
+    top: 64px;
 
     background-color: $light-lighten-color;
   }

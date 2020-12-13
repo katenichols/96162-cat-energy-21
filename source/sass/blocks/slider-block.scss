@@ -5,37 +5,40 @@
   width: 100%;
 }
 
-.slider-block__before {
-  position: relative;
+.slider-block__images {
+  height: 255px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.slider-block__after {
+.slider-block__images-before {
+  position: relative;
+
+  /*display: none;*/
+  width: 311;
+  height: 232px;
+  margin-left: -20px;
+
+  background-image: url("../img/mobile-example-image-before.png");
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+
+.slider-block__images-after {
   position: absolute;
   top: 0;
   left: 50%;
   z-index: 3;
 
   display: none;
+  width: 251px;
+  height: 240px;
+  margin-left: 2px;
 
+  background-image: url("../img/mobile-example-image-after.png");
+  background-repeat: no-repeat;
+  background-clip: content-box;
   transform: translate(-50%, 0);
-}
-
-.slider-block__before,
-.slider-block__after {
-  height: 255px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.slider-block__before img {
-  width: 280px;
-  margin-left: -5px;
-  object-fit: cover;
-}
-
-.slider-block__after img {
-  width: 100%;
-  object-fit: contain;
 }
 
 .slider-block__slider {
@@ -45,15 +48,15 @@
 
   width: 194px;
   margin-right: auto;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
   margin-left: auto;
+  padding-top: 9px;
 }
 
 .slider-block__slider-before,
 .slider-block__slider-after {
   width: 38px;
   height: 30px;
-  padding-top: 10px;
 
   font-style: normal;
   font-size: 16px;
@@ -68,7 +71,7 @@
 
   width: 84px;
   height: 14px;
-  margin-top: 11px;
+  margin-top: 3px;
 
   background-color: $basic-white;
   border: 1px solid $light-darken-color;
@@ -93,27 +96,41 @@
     min-height: 654px;
   }
 
+  .slider-block__images {
+    display: flex;
+    width: 708px;
+    height: 549px;
+  }
+
+  .slider-block__images-before {
+    width: 354px;
+    height: 549px;
+    margin-left: 0;
+
+    background-image: url("../img/tablet-cat-fat-half.png");
+    background-clip: border-box;
+  }
+
+  .slider-block__images-after {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 354px;
+    height: 549px;
+    margin-left: 0;
+
+    background-image: url("../img/tablet-cat-skinny-half.png");
+    transform: translate(0, 0);
+  }
+
   .slider-block__slider {
     align-items: center;
     width: 574px;
     margin-top: 4px;
     margin-bottom: 60px;
-  }
-
-  .slider-block__before {
-    height: 550px;
-  }
-
-  .slider-block__before img {
-    width: 708px;
-  }
-
-  .slider-block__after {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    transform: translate(0, 0);
+    padding-top: 0;
   }
 
   .slider-block__slider-before,
@@ -195,13 +212,28 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider-block__images {
+    width: 650px;
+    height: 536px;
+  }
+
   .slider-block__slider {
     margin-top: 20px;
     margin-right: 0;
   }
 
-  .slider-block__before {
+  .slider-block__images-before {
+    width: 365px;
     height: 536px;
+
+    background-image: url("../img/desktop-cat-fat-half.png");
+  }
+
+  .slider-block__images-after {
+    width: 285px;
+    height: 536px;
+
+    background-image: url("../img/desktop-cat-skinny-half.png");
   }
 
   .slider-block__slider-before,
