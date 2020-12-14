@@ -5,7 +5,7 @@
 .example-item__number {
   justify-content: space-between;
   width: 124px;
-  height: 64px;
+  height: 57px;
   padding-top: 13px;
 
   font-style: normal;
@@ -13,6 +13,7 @@
   line-height: 24px;
   font-family: "Oswald", sans-serif;
   color: $basic-black;
+  text-transform: uppercase;
 
   border: 1px solid $light-darken-color;
   border-radius: 3px;
@@ -20,11 +21,11 @@
 
 .example-item__text {
   position: absolute;
-  top: 50px;
+  top: 47px;
+  left: 20px;
 
-  width: 85px;
+  width: 82px;
   height: 19px;
-  left: 18px;
 
   font-style: normal;
   font-size: 12px;
@@ -39,15 +40,15 @@
 @media (min-width: $tablet-width) {
   .example-item__number {
     width: 162px;
-    height: 77px;
-    padding-top: 15px;
+    height: 72px;
+    padding-top: 14px;
 
     font-size: 30px;
     line-height: 37px;
   }
 
   .example-item__text {
-    top: 68px;
+    top: 63px;
 
     width: 114px;
     height: 19px;
@@ -62,5 +63,13 @@
   .example-item__text--second {
     left: 9px;
     width: 144px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-item__text {
+    top: 64px;
+
+    background-color: $light-lighten-color;
   }
 }

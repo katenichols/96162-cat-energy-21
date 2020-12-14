@@ -5,24 +5,33 @@
   margin-bottom: 0;
 }
 
-.page-promo__wrapper-device {
-  position: relative;
-  grid-column: span 4;
-  display: block;
-}
-
-.page-promo__titles {
-  position: relative;
+.page-promo__background {
+  position: absolute;
+  top: 0;
+  left: 0;
 
   width: 100%;
-  min-height: 302px;
-  margin-bottom: 138px;
-  padding-top: 27px;
+  height: 302px;
 
   background-image: url("../img/mobile-promo-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 0;
+}
+
+.page-promo__wrapper-device {
+  position: relative;
+  grid-column: span 4;
+}
+
+.page-promo__titles {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  min-height: 302px;
+  margin-bottom: 137px;
+  padding-top: 27px;
 }
 
 .page-promo__title {
@@ -59,8 +68,8 @@
   height: 40px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 11px;
+  padding-bottom: 12px;
 
   line-height: 18px;
 
@@ -79,13 +88,23 @@
   position: absolute;
   top: 167px;
   left: 50%;
+  z-index: 0;
 
+  width: 280px;
+  height: 270px;
+
+  background-image: url("../img/mobile-promo-content.png");
+  background-repeat: no-repeat;
   transform: translate(-50%, 0);
 }
 
 @media (min-width: $tablet-width) {
   .page-promo {
     min-height: 872px;
+  }
+
+  .page-promo__background {
+    display: none;
   }
 
   .page-promo__titles {
@@ -112,6 +131,8 @@
   .page-promo__text {
     z-index: 2;
 
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 88px;
 
     font-size: 20px;
@@ -123,7 +144,9 @@
   .page-promo__link {
     width: 244px;
     height: 54px;
-    margin-left: 83px;
+    margin-left: 82px;
+    padding-top: 17px;
+    padding-bottom: 0;
 
     font-size: 20px;
     line-height: 20px;
@@ -136,8 +159,8 @@
 
     width: 709px;
     height: 609px;
-    margin-left: 0;
 
+    background-image: url("../img/tablet-promo-content.jpg");
     transform: translate(-1, 0);
   }
 }
@@ -147,12 +170,12 @@
     min-height: 582px;
   }
 
-  .page-promo__desktop-background {
-    position: absolute;
-    z-index: -2;
+  .page-promo__background {
     top: -112px;
-    right: -110px;
+    left: 50%;
+    z-index: -2;
 
+    display: block;
     width: 720px;
     height: 694px;
     background-image: url("../img/desktop-promo-background.jpg");
@@ -177,16 +200,17 @@
 
   .page-promo__link {
     margin-left: 80px;
+    padding-top: 18px;
   }
 
   .page-promo__image {
     top: 29px;
-    left: 448px;
+    left: 447px;
 
     width: 552px;
     height: 499px;
-    margin-left: 0;
 
+    background-image: url("../img/desktop-promo-content.png");
     transform: translate(0, 0);
   }
 }

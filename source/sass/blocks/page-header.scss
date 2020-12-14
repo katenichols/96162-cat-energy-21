@@ -22,9 +22,8 @@
 
 .page-header__logo {
   display: flex;
-  width: 191px;
-  height: 55px;
-  margin-top: 11px;
+  width: 190px;
+  height: 38px;
 }
 
 .page-header__logo:hover {
@@ -45,7 +44,6 @@
 @media (min-width: $tablet-width) {
   .page-header {
     height: 54px;
-    margin-top: 24px;
   }
 
   .page-header__wrapper-device {
@@ -63,14 +61,23 @@
   .page-header__logo {
     width: 174px;
     height: 52px;
+    margin-top: 0;
     margin-right: 0;
+  }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 52px;
+  }
+
+  .page-header__menu-toggle {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     height: 59px;
-    margin-top: 53px;
   }
 
   .page-header__wrapper {
@@ -82,7 +89,10 @@
   .page-header__logo {
     width: 202px;
     height: 59px;
-    margin-right: 0;
-    margin-top: 18px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }
