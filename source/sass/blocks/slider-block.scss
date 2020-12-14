@@ -6,6 +6,8 @@
 }
 
 .slider-block__images {
+  position: relative;
+
   height: 255px;
   margin-right: auto;
   margin-left: auto;
@@ -15,13 +17,13 @@
   position: relative;
 
   /*display: none;*/
-  width: 311;
+  width: 280px;
   height: 232px;
-  margin-left: -20px;
+  margin-right: auto;
+  margin-left: auto;
 
   background-image: url("../img/mobile-example-image-before.png");
   background-repeat: no-repeat;
-  background-clip: content-box;
 }
 
 .slider-block__images-after {
@@ -238,6 +240,7 @@
 
   .slider-block__slider-before,
   .slider-block__slider-after {
+    height: 26px;
     margin-top: 6px;
   }
 }
