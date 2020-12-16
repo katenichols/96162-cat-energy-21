@@ -2,10 +2,26 @@
   position: relative;
 
   display: block;
+  padding-top: 28px;
+  padding-bottom: 10px;
+
+  border-top: 1px solid $border-line-color;
 }
 
 @media (min-width: $tablet-width) {
   .page-form-titles__wrapper-device {
     grid-column: span 4;
+
+    padding-top: 62px;
+    padding-left: 40px;
+
+    border-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form-titles__wrapper-device {
+    padding-top: 75px;
+    padding-left: 0;
   }
 }

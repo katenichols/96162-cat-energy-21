@@ -1,16 +1,48 @@
 .page-form {
   position: relative;
-
-  outline: 3px solid darkmagenta;
 }
 
 .page-form__wrapper-device {
   position: relative;
-  display: block;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 60px;
+
+  padding-top: 29px;
+  padding-bottom: 32px;
+}
+
+.page-form__title {
+  margin-top: 0;
+  margin-bottom: 37px;
+
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -1px;
+  color: $basic-black;
+}
+
+.page-form__text {
+  margin: 0;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.page-form__fieldsets-group {
+  grid-column: span 2;
+  margin-bottom: 27px;
 }
 
 .page-form__fieldset {
-  display: block;
+  grid-column: span 2;
   margin: 0;
   padding: 0;
 
@@ -24,8 +56,21 @@
 }
 
 .page-form__fieldset--border {
+  padding-top: 23px;
+  padding-bottom: 17px;
+
   border-top: 1px solid $separator-color;
   border-bottom: 1px solid $separator-color;
+}
+
+.page-form__fieldset-legend {
+  padding: 0;
+
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Oswald", sans-serif;
+  color: $basic-black;
 }
 
 .page-form__fieldset-list {
@@ -33,21 +78,64 @@
   padding: 0;
 }
 
-.page-form__label--special {
-  color: $basic-black;
+.page-form__input,
+.page-form__label {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: $special-color;
+}
+
+.page-form__textarea {
+  grid-column: span 2;
+  width: 100%;
+  height: 151px;
+  margin-top: 38px;
+  margin-bottom: 20px;
+  padding-top: 9px;
+  padding-left: 15px;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: $special-color;
+
+  border: 1px solid $input-border-color;
+  resize: none;
 }
 
 .page-form__button {
+  align-items: center;
+
+  grid-column: span 2;
+  display: block;
+  width: 280px;
+  height: 40px;
+  margin-bottom: 21px;
+
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
   color: $basic-white;
 
   background-color: $basic-color;
 }
 
 .page-form__note {
+  grid-column: span 2;
+
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  text-align: center;
+
   font-style: normal;
   font-size: 14px;
   line-height: 16px;
@@ -58,21 +146,119 @@
 @media (min-width: $tablet-width) {
   .page-form__wrapper-device {
     grid-column: span 4;
+
+    padding-top: 56px;
+    padding-right: 37px;
+    padding-bottom: 72px;
+    padding-left: 40px;
+  }
+
+  .page-form__title {
+    margin-bottom: 55px;
+
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -2px;
+  }
+
+  .page-form__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .page-form__fieldsets-group {
+    margin-bottom: 75px;
   }
 
   .page-form__fieldset--border {
+    padding-top: 29px;
+    padding-bottom: 29px;
     border: 1px solid $input-border-color;
+  }
+
+  .page-form__fieldset-legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .page-form__input,
+  .page-form__label {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .page-form__input:focus,
+  .page-form__textarea:focus {
+    border-color: $special-color;
+  }
+
+  .page-form__textarea {
+    height: 174px;
+    margin-top: 76px;
+    margin-bottom: 63px;
+    padding-top: 10px;
+    padding-left: 18px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .page-form__button {
+    grid-column: span 1;
+    width: 282px;
+    height: 52px;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .page-form__note {
+    grid-column: span 1;
+    text-align: left;
+    margin-top: 16px;
+    margin-right: 0;
+    margin-left: 0;
+
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-form__wrapper-device {
+    padding-top: 57px;
+    padding-right: 0;
+    padding-bottom: 82px;
+    padding-left: 0;
+  }
+
   .page-form__fieldsets-group {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 69px;
   }
 
   .page-form__fieldset--border {
     width: 570px;
     height: 196px;
+  }
+
+  .page-form__textarea {
+    margin-bottom: 65px;
+  }
+
+  .page-form__button {
+    width: 568px;
+    height: 52px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .page-form__note {
+    margin-top: 18px;
+    margin-left: 10px;
   }
 }
