@@ -51,7 +51,7 @@
 }
 
 .list-programm__item-label--checked::before {
-    background-image: url("../img/mobile-form-radio-active.svg");
+  background-image: url("../img/mobile-form-radio-active.svg");
 }
 
 @media (min-width: $tablet-width) {
