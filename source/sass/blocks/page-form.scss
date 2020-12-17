@@ -4,6 +4,7 @@
 
 .page-form__wrapper-device {
   position: relative;
+  z-index: 2;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -64,13 +65,28 @@
 }
 
 .page-form__fieldset-legend {
-  padding: 0;
+  margin-left: -20px;
+  padding-left: 20px;
 
   font-style: normal;
   font-size: 24px;
   line-height: 26px;
   font-family: "Oswald", sans-serif;
   color: $basic-black;
+
+  background-color: $basic-white;
+}
+
+.page-form__fieldset-legend--contacts {
+  width: 221px;
+}
+
+.page-form__fieldset-legend--textarea {
+  width: 162px;
+}
+
+.page-form__fieldset-legend--other-goods {
+  width: 184px;
 }
 
 .page-form__fieldset-list {
@@ -86,6 +102,15 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: $special-color;
+}
+
+.page-form__input:focus,
+.page-form__textarea:focus {
+  border-color: $special-color;
+}
+
+.page-form__input:invalid {
+  border-color: $error-color;
 }
 
 .page-form__textarea {
@@ -143,6 +168,28 @@
   color: $basic-black;
 }
 
+.page-form__line {
+  position: absolute;
+  z-index: 1;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: $basic-color;
+}
+
+.page-form__line--contacts {
+  top: 415px;
+}
+
+.page-form__line--textarea {
+  top: 629px;
+}
+
+.page-form__line--other-goods {
+  top: 866px;
+}
+
 @media (min-width: $tablet-width) {
   .page-form__wrapper-device {
     grid-column: span 4;
@@ -177,19 +224,29 @@
   }
 
   .page-form__fieldset-legend {
+    margin-left: -40px;
+    padding-left: 40px;
+
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .page-form__fieldset-legend--contacts {
+    width: 592px;
+  }
+
+  .page-form__fieldset-legend--textarea {
+    width: 259px;
+  }
+
+  .page-form__fieldset-legend--other-goods {
+    width: 292px;
   }
 
   .page-form__input,
   .page-form__label {
     font-size: 20px;
     line-height: 22px;
-  }
-
-  .page-form__input:focus,
-  .page-form__textarea:focus {
-    border-color: $special-color;
   }
 
   .page-form__textarea {
@@ -223,6 +280,18 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  .page-form__line--contacts {
+    top: 617px;
+  }
+
+  .page-form__line--textarea {
+    top: 918px;
+  }
+
+  .page-form__line--other-goods {
+    top: 1269px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -245,6 +314,14 @@
     height: 196px;
   }
 
+  .page-form__fieldset-legend--contacts {
+    width: 591px;
+  }
+
+  .page-form__fieldset-legend--textarea {
+    width: 260px;
+  }
+
   .page-form__textarea {
     margin-bottom: 65px;
   }
@@ -260,5 +337,17 @@
   .page-form__note {
     margin-top: 18px;
     margin-left: 10px;
+  }
+
+  .page-form__line--contacts {
+    top: 344px;
+  }
+
+  .page-form__line--textarea {
+    top: 575px;
+  }
+
+  .page-form__line--other-goods {
+    top: 929px;
   }
 }
