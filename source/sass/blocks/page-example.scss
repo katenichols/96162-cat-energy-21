@@ -146,11 +146,10 @@
     flex-direction: column;
     justify-content: space-between;
 
-    width: 174px;
-    height: 49px;
     margin-top: 11px;
     margin-right: 0;
     margin-left: 0;
+    padding-bottom: 13px;
 
     font-size: 20px;
     line-height: 20px;
@@ -190,7 +189,7 @@
   }
 
   .page-example__title {
-    margin-bottom: 146px;
+    margin-bottom: 147px;
   }
 
   .page-example__text {
@@ -203,15 +202,17 @@
     justify-content: space-between;
     text-align: left;
 
-    width: 327px;
-    height: 20px;
     margin-top: 0;
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .page-example__conclude-left,
   .page-example__conclude-right {
-    height: 20px;
-    padding: 0;
+    padding-bottom: 0;
+  }
+
+  .page-example__conclude-right {
+    margin-right: 110px;
   }
 }
