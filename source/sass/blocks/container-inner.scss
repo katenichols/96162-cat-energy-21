@@ -1,5 +1,6 @@
 .container-inner {
   position: relative;
+  z-index: 2;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -8,8 +9,8 @@
   max-width: 707px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,8 +19,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 60px;
     max-width: 1219px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 

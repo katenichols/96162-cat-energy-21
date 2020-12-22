@@ -5,52 +5,88 @@
   margin-bottom: 0;
   margin-left: auto;
 
-  outline: 3px solid yellow;
+  border-top: 1px solid $light-color;
+  border-bottom: 1px solid $light-color;
 }
 
 .main-catalog__wrapper-device {
   position: relative;
 
   display: block;
-  padding-top: 0;
+  padding-top: 26px;
+  padding-bottom: 25px;
 }
 
 .main-catalog__title {
-  margin-top: 27px;
+  margin-top: 0;
   margin-bottom: 40px;
 
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
   font-family: "Oswald", sans-serif;
+  letter-spacing: -1px;
   color: $basic-black;
+}
+
+.main-catalog__line {
+  position: absolute;
+  z-index: 1;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: $basic-color;
+}
+
+.main-catalog__line--additional {
+  top: 39px;
+  left: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .main-catalog {
-    margin-bottom: 68px;
+    border: 0;
+  }
+
+  .main-catalog__line--additional {
+    top: 39px;
+    left: 0;
   }
 
   .main-catalog__wrapper-device {
     grid-column: span 4;
+
+    padding-top: 61px;
+    padding-bottom: 50px;
+
+    border-bottom: 0;
   }
 
   .main-catalog__title {
-    margin-top: 64px;
-    margin-bottom: 83px;
+    margin-bottom: 166px;
 
     font-size: 60px;
     line-height: 60px;
+    letter-spacing: -2px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-catalog {
-    margin-bottom: 75px;
+    margin-bottom: 10px;
+  }
+
+  .main-catalog__wrapper-device {
+    padding-top: 77px;
   }
 
   .main-catalog__title {
-    margin-top: 74px;
-    margin-bottom: 84px;
+    margin-bottom: 165px;
+  }
+
+  .main-catalog__line--additional {
+    width: 1440px;
+    left: -110px;
   }
 }

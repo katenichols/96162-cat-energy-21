@@ -8,7 +8,7 @@
   margin-bottom: 0;
   padding: 0;
 
-  font-style: bold;
+  font-style: normal;
   font-size: 20px;
   line-height: 20px;
   font-family: "Oswald", sans-serif;
@@ -27,13 +27,11 @@
   border-top: 1px solid $border-line-color;
 }
 
-// .main-nav__list-item:last-child {
-//   border-bottom: 1px solid $border-line-color;
-// }
+.main-nav__list-item--index {
+  border-bottom: 1px solid $border-line-color;
+}
 
 .main-nav__list-item--link {
-
-
   color: $basic-black;
 }
 
@@ -58,12 +56,8 @@
     height: 32px;
     margin-top: 18px;
 
-    font-style: normal;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    color: $basic-black;
   }
 
   .main-nav__list-item {
@@ -75,9 +69,9 @@
     border-top: 0;
   }
 
-  // .main-nav__list-item:last-child {
-  //   border-bottom: 0;
-  // }
+  .main-nav__list-item--index {
+    border-bottom: 0;
+  }
 
   .main-nav__list-item--active {
     height: 32px;
@@ -92,18 +86,15 @@
   }
 
   .main-nav__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 478px;
     margin-top: 16px;
 
-    font-style: normal;
     font-size: 20px;
     line-height: 26px;
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    // color: $basic-white;
+  }
+
+  .main-nav__list--form,
+  .main-nav__list--catalog {
     color: $basic-black;
   }
 
@@ -116,15 +107,11 @@
     border-top: 0;
   }
 
-  // .main-nav__list-item:last-child {
-  //   border-bottom: 0;
-  // }
-
-  .main-nav__list-item--active {
-    // border-bottom: 2px solid $basic-white;
+  .main-nav__list-item--active-index {
+    border-bottom: 2px solid $basic-white;
   }
 
-  .main-nav__list-item--link {
-    // color: $basic-white;
+  .main-nav__list-item--link-index {
+    color: $basic-white;
   }
 }

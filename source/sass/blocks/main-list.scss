@@ -1,3 +1,11 @@
+.main-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  border-top: 1px solid $light-color;
+}
+
 @media (min-width: $tablet-width) {
   .main-list {
     display: grid;
@@ -9,6 +17,8 @@
     margin-bottom: 0;
     margin-left: auto;
     padding: 0;
+
+    border: 0;
   }
 }
 
