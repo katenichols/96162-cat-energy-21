@@ -1,15 +1,25 @@
 .additional-catalog {
+  position: relative;
   margin-bottom: 39px;
+}
 
-  outline: 3px solid navy;
+.additional-catalog__wrapper-device {
+  padding-top: 24px;
 }
 
 .additional-catalog__title {
+  width: 248px;
+  margin-top: 0;
+  margin-bottom: 35px;
+
   font-style: normal;
   font-size: 24px;
   line-height: 24px;
   font-family: "Oswald", sans-serif;
+  letter-spacing: -1px;
   color: $basic-black;
+
+  background-color: $basic-white;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,6 +31,17 @@
 
   .additional-catalog__wrapper-device {
     grid-column: span 4;
+
+    padding-top: 18px;
+  }
+
+  .additional-catalog__title {
+    width: 410px;
+    margin-bottom: 80px;
+    padding-left: 36px;
+
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -33,5 +54,9 @@
 
   .additional-catalog__wrapper-device {
     width: 896px;
+  }
+
+  .additional-catalog__title {
+    margin-left: -36px;
   }
 }
