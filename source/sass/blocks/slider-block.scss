@@ -24,6 +24,10 @@
 
   background-image: url("../img/mobile-example-image-before.png");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile-example-image-before@2x.png");
+  }
 }
 
 .slider-block__images-after {
@@ -41,6 +45,10 @@
   background-repeat: no-repeat;
   background-clip: content-box;
   transform: translate(-50%, 0);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile-example-image-after@2x.png");
+  }
 }
 
 .slider-block__slider {
@@ -111,6 +119,10 @@
 
     background-image: url("../img/tablet-cat-fat-half.png");
     background-clip: border-box;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-cat-fat-half@2x.png");
+    }
   }
 
   .slider-block__images-after {
@@ -125,6 +137,10 @@
 
     background-image: url("../img/tablet-cat-skinny-half.png");
     transform: translate(0, 0);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-cat-skinny-half@2x.png");
+    }
   }
 
   .slider-block__slider {
@@ -229,6 +245,10 @@
     height: 536px;
 
     background-image: url("../img/desktop-cat-fat-half.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop-cat-fat-half@2x.png");
+    }
   }
 
   .slider-block__images-after {
@@ -236,6 +256,10 @@
     height: 536px;
 
     background-image: url("../img/desktop-cat-skinny-half.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop-cat-skinny-half@2x.png");
+    }
   }
 
   .slider-block__slider-before,

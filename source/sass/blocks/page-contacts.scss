@@ -18,6 +18,10 @@
   background-image: url("../img/mobile-map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile-map@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -30,6 +34,10 @@
     height: 400px;
 
     background-image: url("../img/tablet-map.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-map@2x.jpg");
+    }
   }
 }
 
@@ -51,5 +59,9 @@
     margin-left: 0;
 
     background-image: url("../img/desktop-map.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop-map@2x.jpg");
+    }
   }
 }
