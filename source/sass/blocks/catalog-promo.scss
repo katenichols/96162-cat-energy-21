@@ -11,6 +11,10 @@
   background-image: url("../img/mobile-catalog-promo-background.jpg");
   background-repeat: no-repeat;
   background-color: $basic-color;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile-catalog-promo-background@2x.jpg");
+  }
 }
 
 .catalog-promo__img {
@@ -53,6 +57,10 @@
     padding-bottom: 60px;
 
     background-image: url("../img/tablet-catalog-promo-background.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-catalog-promo-background@2x.jpg");
+    }
   }
 
   .catalog-promo__img {
@@ -90,6 +98,10 @@
     padding-bottom: 42px;
 
     background-image: url("../img/mobile-catalog-promo-background.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile-catalog-promo-background@2x.jpg");
+    }
   }
 
   .catalog-promo__img {
