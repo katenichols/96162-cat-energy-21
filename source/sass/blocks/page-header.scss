@@ -46,7 +46,7 @@
 }
 
 .page-header__menu-toggle--opened {
-  background-image: url("../img/button-menu-open.svg");
+  background-image: url("../img/button-menu-close.svg");
   background-repeat: no-repeat;
 }
 
@@ -54,7 +54,7 @@
   width: 22px;
   margin-top: -4px;
 
-  background-image: url("../img/button-menu-close.svg");
+  background-image: url("../img/button-menu-open.svg");
   background-repeat: no-repeat;
 }
 
@@ -91,6 +91,7 @@
   .page-header__logo-image {
     width: 174px;
     height: 52px;
+    margin-top: 0;
   }
 
   .page-header__menu-toggle {

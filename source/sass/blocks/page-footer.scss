@@ -97,12 +97,16 @@
 
   .page-footer__copyright {
     height: auto;
-    margin-top: -6px;
+    margin-top: -10px;
   }
 
   .page-footer__copyright-link {
     width: 163px;
     padding-top: 0;
+  }
+
+  .page-footer__copyright--form {
+    margin-top: -4px;
   }
 }
 
@@ -117,7 +121,7 @@
   }
 
   .page-footer__copyright-link {
-    margin-top: 4px;
+    margin-top: 10px;
   }
 
   .page-footer__copyright-link--svg-fill {

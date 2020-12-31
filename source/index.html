@@ -37,7 +37,7 @@
                   <img class="page-header__logo-image" src="../img/mobile-logo.svg" width="190" height="38" alt="Cat Enegry">
                 </picture>
                 </a>
-              <button class="page-header__menu-toggle page-header__menu-toggle--opened" type="button">
+              <button class="page-header__menu-toggle page-header__menu-toggle--nojs" type="button">
                 <span class="visually-hidden">Открыть меню</span>
               </button>
             </div>
@@ -264,19 +264,17 @@
       var buttonToggle = document.querySelector('.page-header__menu-toggle');
 
       buttonToggle.classList.remove('page-header__menu-toggle--nojs');
-      buttonToggle.classList.add('page-header__menu-toggle--opened');
-      navMain.classList.remove('main-nav--unvisible');
-      navMain.classList.add('main-nav--visible');
+      buttonToggle.classList.add('page-header__menu-toggle--closed');
 
       buttonToggle.addEventListener('click', function() {
-        if (buttonToggle.contains('page-header__menu-toggle--closed')) {
-          buttonToggle.classList.remove('page-header__menu-toggle--closed');
-          buttonToggle.classList.add('page-header__menu-toggle--opened');
+        if (navMain.classList.contains('main-nav--visible')) {
+          buttonToggle.classList.remove('page-header__menu-toggle--opened');
+          buttonToggle.classList.add('page-header__menu-toggle--closed');
           navMain.classList.remove('main-nav--visible');
           navMain.classList.add('main-nav--unvisible');
         } else {
-          buttonToggle.classList.remove('page-header__menu-toggle--opened');
-          buttonToggle.classList.add('page-header__menu-toggle--closed');
+          buttonToggle.classList.remove('page-header__menu-toggle--closed');
+          buttonToggle.classList.add('page-header__menu-toggle--opened');
           navMain.classList.remove('main-nav--unvisible');
           navMain.classList.add('main-nav--visible');
         }

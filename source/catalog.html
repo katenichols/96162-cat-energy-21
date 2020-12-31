@@ -44,11 +44,11 @@
                   <img class="page-header__logo-image" src="../img/mobile-logo.svg" width="190" height="38" alt="Cat Enegry">
                 </picture>
                 </a>
-              <button class="page-header__menu-toggle" type="button">
-                <img src="../img/button-menu-open.svg" width="28" height="18" alt="">
-              </button>
-            </div>
-            <nav class="main-nav">
+                <button class="page-header__menu-toggle page-header__menu-toggle--nojs" type="button">
+                  <span class="visually-hidden">Открыть меню</span>
+                </button>
+              </div>
+              <nav class="main-nav main-nav--unvisible">
               <ul class="main-nav__list main-nav__list--catalog">
                 <li class="main-nav__list-item">
                   <a class="main-nav__list-item--link" href="index.html" aria-label="Перейти на главную">
@@ -462,6 +462,27 @@
         </div>
       </footer>
     </div>
-  </body>
 
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var buttonToggle = document.querySelector('.page-header__menu-toggle');
+
+      buttonToggle.classList.remove('page-header__menu-toggle--nojs');
+      buttonToggle.classList.add('page-header__menu-toggle--closed');
+
+      buttonToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--visible')) {
+          buttonToggle.classList.remove('page-header__menu-toggle--opened');
+          buttonToggle.classList.add('page-header__menu-toggle--closed');
+          navMain.classList.remove('main-nav--visible');
+          navMain.classList.add('main-nav--unvisible');
+        } else {
+          buttonToggle.classList.remove('page-header__menu-toggle--closed');
+          buttonToggle.classList.add('page-header__menu-toggle--opened');
+          navMain.classList.remove('main-nav--unvisible');
+          navMain.classList.add('main-nav--visible');
+        }
+      });
+    </script>
+  </body>
 </html>
