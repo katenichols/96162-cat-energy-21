@@ -16,7 +16,6 @@
 .slider-block__images-before {
   position: relative;
 
-  /*display: none;*/
   width: 280px;
   height: 232px;
   margin-right: auto;
@@ -24,6 +23,7 @@
 
   background-image: url("../img/mobile-example-image-before.png");
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/mobile-example-image-before@2x.png");
@@ -44,6 +44,7 @@
   background-image: url("../img/mobile-example-image-after.png");
   background-repeat: no-repeat;
   background-clip: content-box;
+  background-size: cover;
   transform: translate(-50%, 0);
 
   @media (min-resolution: 2dppx) {
@@ -174,7 +175,7 @@
   }
 
   .slider-block__separator {
-    top: -2px;
+    top: -3px;
     left: 210px;
 
     width: 8px;
@@ -186,7 +187,7 @@
 
   .slider-block__separator-border-1 {
     position: absolute;
-    top: -14px;
+    top: -16px;
     left: 197px;
 
     width: 34px;
@@ -208,7 +209,7 @@
 
   .slider-block__separator-border-2 {
     position: absolute;
-    top: -13px;
+    top: -15px;
     left: 198px;
 
     width: 32px;

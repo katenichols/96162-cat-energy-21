@@ -10,6 +10,24 @@
   padding-left: 73px;
 }
 
+.social-media-list__item-link--icon-vk:hover,
+.social-media-list__item-link--icon-insta:hover {
+  fill: $basic-color;
+}
+
+.social-media-list__item-link--icon-vk:active,
+.social-media-list__item-link--icon-insta:active {
+  fill-opacity: 0.3;
+}
+
+.social-media-list__item-link--icon-fb:hover {
+  stroke: $basic-color;
+}
+
+.social-media-list__item-link--icon-fb:active {
+  stroke-opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .social-media-list {
     align-items: center;

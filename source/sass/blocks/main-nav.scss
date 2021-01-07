@@ -43,6 +43,16 @@
   opacity: 0.3;
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-nav--unvisible {
+    display: none;
+  }
+
+  .main-nav--visible {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 440px;
@@ -74,7 +84,7 @@
   }
 
   .main-nav__list-item--active {
-    height: 32px;
+    height: 34px;
     border-bottom: 2px solid $basic-color;
   }
 }
