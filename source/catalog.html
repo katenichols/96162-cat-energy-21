@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="wodth=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -15,9 +19,9 @@
             <div class="page-header__wrapper">
               <a class="page-header__logo" href="index.html" aria-label="Перейти на главную">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="../img/desktop-logo.svg">
-                  <source media="(min-width: 768px)" srcset="../img/tablet-logo.svg">
-                  <img class="page-header__logo-image" src="../img/mobile-logo.svg" width="190" height="38" alt="Cat Enegry">
+                  <source media="(min-width: 1440px)" srcset="img/desktop-logo.svg">
+                  <source media="(min-width: 768px)" srcset="img/tablet-logo.svg">
+                  <img class="page-header__logo-image" src="img/mobile-logo.svg" width="190" height="38" alt="Cat Enegry">
                 </picture>
                 </a>
                 <button class="page-header__menu-toggle page-header__menu-toggle--nojs" type="button">
@@ -27,17 +31,17 @@
               <nav class="main-nav main-nav--unvisible">
               <ul class="main-nav__list main-nav__list--catalog">
                 <li class="main-nav__list-item">
-                  <a class="main-nav__list-item--link" href="index.html" aria-label="Перейти на главную">
+                  <a class="main-nav__list-item-link" href="index.html" aria-label="Перейти на главную">
                     Главная
                   </a>
                 </li>
                 <li class="main-nav__list-item main-nav__list-item--active">
-                  <a class="main-nav__list-item--link" href="catalog.html" aria-label="Открыть каталог продукции">
+                  <a class="main-nav__list-item-link" href="catalog.html" aria-label="Открыть каталог продукции">
                     Каталог продукции
                   </a>
                 </li>
                 <li class="main-nav__list-item">
-                  <a class="main-nav__list-item--link" href="form.html" aria-label="Подобрать программу">
+                  <a class="main-nav__list-item-link" href="form.html" aria-label="Подобрать программу">
                     Подбор программы
                   </a>
                 </li>
@@ -57,10 +61,10 @@
                   <div class="product-card__item">
                     <div class="product-card__item-img product-card__item-img--first">
                       <picture>
-                        <source type="image/webp" media="(min-width: 768px)" srcset="../img/tablet-product-small1.webp 1x, ../img/tablet-product-small1@2x.webp 2x">
-                        <source type="image/webp" srcset="../img/mobile-product-small1.webp 1x, ../img/mobile-product-small1@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="../img/tablet-product-small1.png 1x, ../img/tablet-product-small1@2x.png 2x">
-                        <img class="product-card__img product-card__img--small product-card__img--exc1" src="../img/mobile-product-small1.jpg" srcset="../img/mobile-product-small1@2x.jpg 2x" width="68" height="86" alt="Фото упаковки Cat Energy Pro 500 г Курица">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-product-small1.webp 1x, img/tablet-product-small1@2x.webp 2x">
+                        <source type="image/webp" srcset="img/mobile-product-small1.webp 1x, img/mobile-product-small1@2x.webp 2x">
+                        <source media="(min-width: 768px)" srcset="img/tablet-product-small1.png 1x, img/tablet-product-small1@2x.png 2x">
+                        <img class="product-card__img product-card__img--small product-card__img--exc1" src="img/mobile-product-small1.jpg" srcset="img/mobile-product-small1@2x.jpg 2x" width="68" height="86" alt="Фото упаковки Cat Energy Pro 500 г Курица">
                       </picture>
                     </div>
                     <div class="product-card__item-info">
@@ -91,10 +95,10 @@
                   <div class="product-card__item">
                     <div class="product-card__item-img product-card__item-img--second">
                       <picture>
-                        <source type="image/webp" media="(min-width: 768px)" srcset="../img/tablet-product-big1.webp 1x, ../img/tablet-product-big1@2x.webp 2x">
-                        <source type="image/webp" srcset="../img/mobile-product-big1.webp 1x, ../img/mobile-product-big1@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="../img/tablet-product-big1.png 1x, ../img/tablet-product-big1@2x.png 2x">
-                        <img class="product-card__img product-card__img--big product-card__img--exc2" src="../img/mobile-product-big1.jpg" srcset="../img/mobile-product-big1@2x.jpg 2x" width="84" height="101" alt="Фото упаковки Cat Energy Pro 1000 г Курица">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-product-big1.webp 1x, img/tablet-product-big1@2x.webp 2x">
+                        <source type="image/webp" srcset="img/mobile-product-big1.webp 1x, img/mobile-product-big1@2x.webp 2x">
+                        <source media="(min-width: 768px)" srcset="img/tablet-product-big1.png 1x, img/tablet-product-big1@2x.png 2x">
+                        <img class="product-card__img product-card__img--big product-card__img--exc2" src="img/mobile-product-big1.jpg" srcset="img/mobile-product-big1@2x.jpg 2x" width="84" height="101" alt="Фото упаковки Cat Energy Pro 1000 г Курица">
                       </picture>
                     </div>
                     <div class="product-card__item-info">
@@ -125,10 +129,10 @@
                   <div class="product-card__item">
                     <div class="product-card__item-img product-card__item-img--third">
                       <picture>
-                        <source type="image/webp" media="(min-width: 768px)" srcset="../img/tablet-product-small2.webp 1x, ../img/tablet-product-small2@2x.webp 2x">
-                        <source type="image/webp" srcset="../img/mobile-product-small2.webp 1x, ../img/mobile-product-small2@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="../img/tablet-product-small2.png 1x, ../img/tablet-product-small2@2x.png 2x">
-                        <img class="product-card__img product-card__img--small" src="../img/mobile-product-small2.jpg" srcset="../img/mobile-product-small2@2x.jpg 2x" width="68" height="78" alt="Фото упаковки Cat Energy Pro 500 г Рыба">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-product-small2.webp 1x, img/tablet-product-small2@2x.webp 2x">
+                        <source type="image/webp" srcset="img/mobile-product-small2.webp 1x, img/mobile-product-small2@2x.webp 2x">
+                        <source media="(min-width: 768px)" srcset="img/tablet-product-small2.png 1x, img/tablet-product-small2@2x.png 2x">
+                        <img class="product-card__img product-card__img--small" src="img/mobile-product-small2.jpg" srcset="img/mobile-product-small2@2x.jpg 2x" width="68" height="78" alt="Фото упаковки Cat Energy Pro 500 г Рыба">
                       </picture>
                     </div>
                     <div class="product-card__item-info">
@@ -159,10 +163,10 @@
                   <div class="product-card__item">
                     <div class="product-card__item-img product-card__item-img--fourth">
                       <picture>
-                        <source type="image/webp" media="(min-width: 768px)" srcset="../img/tablet-product-big2.webp 1x, ../img/tablet-product-big2@2x.webp 2x">
-                        <source type="image/webp" srcset="../img/mobile-product-big2.webp 1x, ../img/mobile-product-big2@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="../img/tablet-product-big2.png 1x, ../img/tablet-product-big2@2x.png 2x">
-                        <img class="product-card__img product-card__img--big" src="../img/mobile-product-big2.jpg" srcset="../img/mobile-product-big2@2x.jpg 2x" width="84" height="101" alt="Фото упаковки Cat Energy Pro 1000 г Рыба">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-product-big2.webp 1x, img/tablet-product-big2@2x.webp 2x">
+                        <source type="image/webp" srcset="img/mobile-product-big2.webp 1x, img/mobile-product-big2@2x.webp 2x">
+                        <source media="(min-width: 768px)" srcset="img/tablet-product-big2.png 1x, img/tablet-product-big2@2x.png 2x">
+                        <img class="product-card__img product-card__img--big" src="img/mobile-product-big2.jpg" srcset="img/mobile-product-big2@2x.jpg 2x" width="84" height="101" alt="Фото упаковки Cat Energy Pro 1000 г Рыба">
                       </picture>
                     </div>
                     <div class="product-card__item-info">
@@ -193,10 +197,10 @@
                   <div class="product-card__item">
                     <div class="product-card__item-img product-card__item-img--fifth">
                       <picture>
-                        <source type="image/webp" media="(min-width: 768px)" srcset="../img/tablet-product-small3.webp 1x, ../img/tablet-product-small3@2x.webp 2x">
-                        <source type="image/webp" srcset="../img/mobile-product-small3.webp 1x, ../img/mobile-product-small3@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="../img/tablet-product-small3.png 1x, ../img/tablet-product-small3@2x.png 2x">
-                        <img class="product-card__img product-card__img--small product-card__img--exc3" src="../img/mobile-product-small3.jpg" srcset="../img/mobile-product-small3@2x.jpg 2x" width="68" height="78" alt="Фото упаковки Cat Energy Pro 500 г Гречка">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-product-small3.webp 1x, img/tablet-product-small3@2x.webp 2x">
+                        <source type="image/webp" srcset="img/mobile-product-small3.webp 1x, img/mobile-product-small3@2x.webp 2x">
+                        <source media="(min-width: 768px)" srcset="img/tablet-product-small3.png 1x, img/tablet-product-small3@2x.png 2x">
+                        <img class="product-card__img product-card__img--small product-card__img--exc3" src="img/mobile-product-small3.jpg" srcset="img/mobile-product-small3@2x.jpg 2x" width="68" height="78" alt="Фото упаковки Cat Energy Pro 500 г Гречка">
                       </picture>
                     </div>
                     <div class="product-card__item-info">
@@ -227,10 +231,10 @@
                   <div class="product-card__item">
                     <div class="product-card__item-img product-card__item-img--sixth">
                       <picture>
-                        <source type="image/webp" media="(min-width: 768px)" srcset="../img/tablet-product-big3.webp 1x, ../img/tablet-product-big3@2x.webp 2x">
-                        <source type="image/webp" srcset="../img/mobile-product-big3.webp 1x, ../img/mobile-product-big3@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="../img/tablet-product-big3.png 1x, ../img/tablet-product-big3@2x.png 2x">
-                        <img class="product-card__img product-card__img--big" src="../img/mobile-product-big3.jpg" srcset="../img/mobile-product-big3@2x.jpg 2x" width="84" height="100" alt="Фото упаковки Cat Energy Pro 1000 г Гречка">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-product-big3.webp 1x, img/tablet-product-big3@2x.webp 2x">
+                        <source type="image/webp" srcset="img/mobile-product-big3.webp 1x, img/mobile-product-big3@2x.webp 2x">
+                        <source media="(min-width: 768px)" srcset="img/tablet-product-big3.png 1x, img/tablet-product-big3@2x.png 2x">
+                        <img class="product-card__img product-card__img--big" src="img/mobile-product-big3.jpg" srcset="img/mobile-product-big3@2x.jpg 2x" width="84" height="100" alt="Фото упаковки Cat Energy Pro 1000 г Гречка">
                       </picture>
                     </div>
                     <div class="product-card__item-info">
@@ -261,10 +265,10 @@
                   <div class="product-card__item">
                     <div class="product-card__item-img product-card__item-img--seventh">
                       <picture>
-                        <source type="image/webp" media="(min-width: 768px)" srcset="../img/tablet-product-small4.webp 1x, ../img/tablet-product-small4@2x.webp 2x">
-                        <source type="image/webp" srcset="../img/mobile-product-small4.webp 1x, ../img/mobile-product-small4@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="../img/tablet-product-small4.png 1x, ../img/tablet-product-small4@2x.png 2x,">
-                        <img class="product-card__img product-card__img--small" src="../img/mobile-product-small4.jpg" srcset="../img/mobile-product-small4@2x.jpg 2x" width="72" height="84" alt="Фото упаковки Cat Energy Pro 500 г Рис">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-product-small4.webp 1x, img/tablet-product-small4@2x.webp 2x">
+                        <source type="image/webp" srcset="img/mobile-product-small4.webp 1x, img/mobile-product-small4@2x.webp 2x">
+                        <source media="(min-width: 768px)" srcset="img/tablet-product-small4.png 1x, img/tablet-product-small4@2x.png 2x">
+                        <img class="product-card__img product-card__img--small" src="img/mobile-product-small4.jpg" srcset="img/mobile-product-small4@2x.jpg 2x" width="72" height="84" alt="Фото упаковки Cat Energy Pro 500 г Рис">
                       </picture>
                     </div>
                     <div class="product-card__item-info">
@@ -295,80 +299,82 @@
                   <div class="product-card__item product-card__item--another">
                     <div class="product-card__item-img-plus">
                       <svg viewBox="0 0 30 30" width="30" height="30" fill="none" stroke-width="2">
-                        <use xlink:href="img/icons/sprite.svg#icon-catalog-plus"></use>
+                        <use xlink:href="img/sprite.svg#icon-catalog-plus"></use>
                       </svg>
                     </div>
                     <p class="product-card__item-title product-card__item-title--another">Показать еще 100500 товаров</p>
                     <span class="product-card__item-text">На самом деле вкусов гораздо больше!</span>
                   </div>
-                  <button class="product-card__button product-button--all" type="button">Показать все</button>
+                  <button class="product-card__button product-button-all" type="button">Показать все</button>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class ="additional-promo-wrapper">
-          <div class="main-catalog__line main-catalog__line--additional"></div>
-          <div class="additional-catalog">
-            <div class="container-inner">
-              <div class="additional-catalog__wrapper-device">
-                <h2 class="additional-catalog__title">Дополнительные товары</h2>
-                <ul class="additional-catalog__list second-list">
-                  <li class="second-list__item">
-                    <div class="second-list__item-wrapper">
-                      <span class="second-list__item-title">Сахарозаменитель</span>
-                      <div class="second-list__item-inner-wrapper">
-                        <span class="second-list__item-text">1 упаковка (100 г)</span>
-                        <span class="second-list__item-text second-list__item-text--price">200 р.</span>
+        <div class="container-second">
+          <div class="additional-catalog-line"></div>
+          <div class ="additional-promo-wrapper">
+            <div class="additional-catalog">
+              <div class="container-inner">
+                <div class="additional-catalog__wrapper-device">
+                  <h2 class="additional-catalog__title">Дополнительные товары</h2>
+                  <ul class="additional-catalog__list second-list">
+                    <li class="second-list__item">
+                      <div class="second-list__item-wrapper">
+                        <span class="second-list__item-title">Сахарозаменитель</span>
+                        <div class="second-list__item-inner-wrapper">
+                          <span class="second-list__item-text">1 упаковка (100 г)</span>
+                          <span class="second-list__item-text second-list__item-text--price">200 р.</span>
+                        </div>
                       </div>
-                    </div>
-                    <button class="second-list__item-button product-button" type="button">Заказать</button>
-                  </li>
-                  <li class="second-list__item">
-                    <div class="second-list__item-wrapper">
-                      <span class="second-list__item-title">Питьевая вода</span>
-                      <div class="second-list__item-inner-wrapper second-list__item-inner-wrapper--second">
-                        <span class="second-list__item-text">5 литров</span>
-                        <span class="second-list__item-text second-list__item-text--price second-list__item-text--exc">50 р.</span>
+                      <button class="second-list__item-button product-button" type="button">Заказать</button>
+                    </li>
+                    <li class="second-list__item">
+                      <div class="second-list__item-wrapper">
+                        <span class="second-list__item-title">Питьевая вода</span>
+                        <div class="second-list__item-inner-wrapper second-list__item-inner-wrapper--second">
+                          <span class="second-list__item-text">5 литров</span>
+                          <span class="second-list__item-text second-list__item-text--price second-list__item-text--exc">50 р.</span>
+                        </div>
                       </div>
-                    </div>
-                    <button class="second-list__item-button product-button" type="button">Заказать</button>
-                  </li>
-                  <li class="second-list__item">
-                    <div class="second-list__item-wrapper">
-                      <span class="second-list__item-title">Молоко</span>
-                      <div class="second-list__item-inner-wrapper second-list__item-inner-wrapper--third">
-                        <span class="second-list__item-text">1 литр</span>
-                        <span class="second-list__item-text second-list__item-text--price">100 р.</span>
+                      <button class="second-list__item-button product-button" type="button">Заказать</button>
+                    </li>
+                    <li class="second-list__item">
+                      <div class="second-list__item-wrapper">
+                        <span class="second-list__item-title">Молоко</span>
+                        <div class="second-list__item-inner-wrapper second-list__item-inner-wrapper--third">
+                          <span class="second-list__item-text">1 литр</span>
+                          <span class="second-list__item-text second-list__item-text--price">100 р.</span>
+                        </div>
                       </div>
-                    </div>
-                    <button class="second-list__item-button product-button" type="button">Заказать</button>
-                  </li>
-                  <li class="second-list__item">
-                    <div class="second-list__item-wrapper">
-                      <span class="second-list__item-title">Витамины</span>
-                      <div class="second-list__item-inner-wrapper second-list__item-inner-wrapper--fourth">
-                        <span class="second-list__item-text">1 упаковка (30 г)</span>
-                        <span class="second-list__item-text second-list__item-text--price">300 р.</span>
+                      <button class="second-list__item-button product-button" type="button">Заказать</button>
+                    </li>
+                    <li class="second-list__item">
+                      <div class="second-list__item-wrapper">
+                        <span class="second-list__item-title">Витамины</span>
+                        <div class="second-list__item-inner-wrapper second-list__item-inner-wrapper--fourth">
+                          <span class="second-list__item-text">1 упаковка (30 г)</span>
+                          <span class="second-list__item-text second-list__item-text--price">300 р.</span>
+                        </div>
                       </div>
-                    </div>
-                    <button class="second-list__item-button product-button" type="button">Заказать</button>
-                  </li>
-                </ul>
+                      <button class="second-list__item-button product-button" type="button">Заказать</button>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="catalog-promo">
-            <div class="container-inner">
-              <div class="catalog-promo__wrapper-device">
-                <div class="catalog-promo__img">
-                  <svg class="catalog-promo__img--svg" viewBox="0 0 78 80" width="78" height="80" fill="#ffffff">
-                    <use xlink:href="img/icons/sprite.svg#icon-catalog-gift"></use>
-                  </svg>
+            <div class="catalog-promo">
+              <div class="container-inner">
+                <div class="catalog-promo__wrapper-device">
+                  <div class="catalog-promo__img">
+                    <svg class="catalog-promo__img-svg" viewBox="0 0 78 80" width="78" height="80" fill="#ffffff">
+                      <use xlink:href="img/sprite.svg#icon-catalog-gift"></use>
+                    </svg>
+                  </div>
+                  <p class="catalog-promo__text">Закажите все<br>и получите чехол для кота в подарок!</p>
                 </div>
-                <p class="catalog-promo__text">Закажите все<br>и получите чехол для кота в подарок!</p>
               </div>
             </div>
           </div>
@@ -387,7 +393,8 @@
               </div>
             </div>
           </div>
-          <div class="page-contacts__map"></div>
+          <div class="page-contacts__map page-contacts__map--nojs">
+          </div>
         </section>
       </main>
 
@@ -396,8 +403,8 @@
           <div class="page-footer__wrapper-device">
             <div class="page-footer__logo">
               <a class="page-footer__logo-link" href="index.html" aria-label="Перейти на главную">
-                <svg  class="page-footer__logo-link--svg" viewbox="0 0 128 24" width="128" height="24" fill="#111111">
-                  <use xlink:href="img/icons/sprite.svg#footer-logo"></use>
+                <svg  class="page-footer__logo-link-svg" viewbox="0 0 128 24" width="128" height="24" fill="#111111">
+                  <use xlink:href="img/sprite.svg#footer-logo"></use>
                 </svg>
               </a>
             </div>
@@ -405,22 +412,22 @@
               <ul class="page-footer__social-media-list social-media-list">
                 <li class="social-media-list__item social-media-list__item--vk">
                   <a class="social-media-list__item-link" href="https://vk.com" target="blank" aria-label="Перейти во Вконтакте">
-                    <svg class="social-media-list__item-link--icon-vk" viewBox="0 0 23 16" width="23" height="16" fill="#666666">
-                      <use xlink:href="img/icons/sprite.svg#icon_vkontakte"></use>
+                    <svg class="social-media-list__item-link-icon social-media-list__item-link-icon--vk" viewBox="0 0 23 16" width="23" height="16" fill="#666666">
+                      <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-media-list__item social-media-list__item--insta">
                   <a class="social-media-list__item-link" href="https://instagram.com" target="blank" aria-label="Перейти в Инстаграм">
-                    <svg class="social-media-list__item-link--icon-insta" viewbox="0 0 16 16" width="16" height="16" fill="#666666">
-                      <use xlink:href="img/icons/sprite.svg#icon_instagram"></use>
+                    <svg class="social-media-list__item-link-icon social-media-list__item-link-icon--insta" viewbox="0 0 16 16" width="16" height="16" fill="#666666">
+                      <use xlink:href="img/sprite.svg#icon_instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-media-list__item social-media-list__item--fb">
                   <a class="social-media-list__item-link" href="https://facebook.com" target="blank" aria-label="Перейти в Фейсбук">
-                    <svg class="social-media-list__item-link--icon-fb" viewbox="0 0 22 22" width="22" height="22" fill="none" stroke="#666666">
-                      <use xlink:href="img/icons/sprite.svg#icon_facebook"></use>
+                    <svg class="social-media-list__item-link-icon social-media-list__item-link-icon--fb" viewbox="0 0 22 22" width="22" height="22" fill="none" stroke="#666666">
+                      <use xlink:href="img/sprite.svg#icon_facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -429,8 +436,8 @@
             <div class="page-footer__copyright">
               <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="blank" aria-label="Перейти на сайт разработчика Html-academy">
                 <span>HTML Academy</span>
-                  <svg class="page-footer__copyright-link--svg" viewbox="0 0 27 34" width="27" height="34" fill="#666666">
-                    <use xlink:href="img/icons/sprite.svg#icon-htmlacademy"></use>
+                  <svg class="page-footer__copyright-link-svg" viewbox="0 0 27 34" width="27" height="34" fill="#666666">
+                    <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
                   </svg>
               </a>
             </div>
@@ -438,27 +445,6 @@
         </div>
       </footer>
     </div>
-
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var buttonToggle = document.querySelector('.page-header__menu-toggle');
-
-      buttonToggle.classList.remove('page-header__menu-toggle--nojs');
-      buttonToggle.classList.add('page-header__menu-toggle--closed');
-
-      buttonToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--visible')) {
-          buttonToggle.classList.remove('page-header__menu-toggle--opened');
-          buttonToggle.classList.add('page-header__menu-toggle--closed');
-          navMain.classList.remove('main-nav--visible');
-          navMain.classList.add('main-nav--unvisible');
-        } else {
-          buttonToggle.classList.remove('page-header__menu-toggle--closed');
-          buttonToggle.classList.add('page-header__menu-toggle--opened');
-          navMain.classList.remove('main-nav--unvisible');
-          navMain.classList.add('main-nav--visible');
-        }
-      });
-    </script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

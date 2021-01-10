@@ -1,20 +1,17 @@
 .page-contacts {
   position: relative;
+
+  width: auto;
   margin-right: auto;
   margin-left: auto;
-}
-
-.page-contacts--form,
-.page-contacts--catalog {
-  background-color: $light-lighten-color;
 }
 
 .page-contacts__map {
-  width: auto;
   height: 362px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0;
+}
 
+.page-contacts__map--nojs {
   background-image: url("../img/mobile-map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,6 +19,11 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/mobile-map@2x.jpg");
   }
+}
+
+.page-contacts--form,
+.page-contacts--catalog {
+  background-color: $light-lighten-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,7 +34,9 @@
 
   .page-contacts__map {
     height: 400px;
+  }
 
+  .page-contacts__map--nojs {
     background-image: url("../img/tablet-map.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -42,22 +46,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-contacts {
-    height: 400px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .page-contacts__wrapper-device {
     position: relative;
     height: 0;
   }
 
-  .page-contacts__map {
-    height: 400px;
-    margin-right: 0;
-    margin-left: 0;
-
+  .page-contacts__map--nojs {
     background-image: url("../img/desktop-map.jpg");
 
     @media (min-resolution: 2dppx) {

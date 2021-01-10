@@ -7,11 +7,7 @@
   margin-top: 0;
   margin-bottom: 38px;
 
-  font-style: normal;
-  font-size: 36px;
-  line-height: 40px;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: -1px;
+  @include font-group2($font-36, $line-40, $family-full, $spacing-1);
   color: $basic-black;
 }
 
@@ -23,12 +19,12 @@
   padding: 0;
 }
 
-.page-feature__list-item {
+.page-features__list-item {
   display: flex;
   margin-bottom: 16px;
 }
 
-.page-feature__list-item:last-child {
+.page-features__list-item:last-child {
   margin-bottom: 0;
 }
 
@@ -47,9 +43,7 @@
   .page-features__title {
     margin-bottom: 72px;
 
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: -2px;
+    @include font-group2($font-60, $line-60, $family-full, $spacing-2);
   }
 
   .page-features__list {
@@ -81,25 +75,25 @@
     grid-column-gap: 80px;
   }
 
-  .page-feature__list-item {
+  .page-features__list-item {
     margin-bottom: 0;
     margin-right: 0;
   }
 
-  .page-feature__list-item:first-child {
+  .page-features__list-item:first-child {
     margin-bottom: 0;
   }
 
-  .page-feature__list-item:nth-child(2) {
+  .page-features__list-item:nth-child(2) {
     margin-right: 0;
   }
 
-  .page-feature__list-item:nth-child(3) {
+  .page-features__list-item:nth-child(3) {
     margin-right: 0;
     margin-bottom: 24px;
   }
 
-  .page-feature__list-item:nth-child(4) {
+  .page-features__list-item:nth-child(4) {
     margin-right: 0;
   }
 

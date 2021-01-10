@@ -8,8 +8,16 @@
   outline: none;
 }
 
-ul {
+.page-form__fieldset-list,
+.page-footer__social-media-list,
+.main-nav__list,
+.main-catalog__list,
+.additional-catalog__list,
+.page-features__list,
+.page-example__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {

@@ -12,10 +12,7 @@
   margin-top: -4px;
   margin-bottom: 0;
 
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Arial", sans-serif;
+  @include font-group3($font-14, $line-18, $family-once);
   color: $special-color;
 }
 
@@ -36,8 +33,7 @@
   }
 
   .feature-item__text {
-    font-size: 16px;
-    line-height: 24px;
+    @include font-group1($font-16, $line-24);
   }
 
   .feature-item:first-child {

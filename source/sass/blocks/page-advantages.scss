@@ -58,11 +58,7 @@
   margin-right: 20px;
   margin-bottom: 0;
 
-  font-style: normal;
-  font-size: 24px;
-  line-height: 37px;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: -1px;
+  @include font-group2($font-24, $line-37, $family-full, $spacing-1);
   text-transform: uppercase;
   color: $basic-black;
 }
@@ -72,10 +68,7 @@
   margin-top: 21px;
   margin-bottom: 22px;
 
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Arial", sans-serif;
+  @include font-group3($font-14, $line-18, $family-once);
   color: $special-color;
 }
 
@@ -92,19 +85,15 @@
 }
 
 .page-advantages__item-link {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 16px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
+  @include font-group4($font-16, $line-16, $family-full, $transform-up);
   color: $basic-black;
 }
 
-.page-advantages__item-link--text {
+.page-advantages__item-link-text {
   margin-right: 13px;
 }
 
-.page-advantages__item-link--svg {
+.page-advantages__item-link-svg {
   display: inline-block;
   width: 24px;
   height: 12px;
@@ -162,8 +151,7 @@
     min-width: 206px;
     margin-right: 0;
 
-    font-size: 36px;
-    line-height: 36px;
+    @include font-group1($font-36, $line-36);
   }
 
   .page-advantages__item-text {
@@ -171,8 +159,7 @@
     margin-top: 25px;
     margin-bottom: 57px;
 
-    font-size: 16px;
-    line-height: 24px;
+    @include font-group1($font-16, $line-24);
   }
 
   .page-advantages__item-text--last {
@@ -194,16 +181,15 @@
     align-items: center;
     margin-bottom: 0;
 
-    font-size: 20px;
-    line-height: 20px;
+    @include font-group1($font-20, $line-20);
   }
 
-  .page-advantages__item-link--text {
+  .page-advantages__item-link-text {
     margin-right: 26px;
   }
 
   .page-advantages__item-link:hover {
-    .page-advantages__item-link--svg {
+    .page-advantages__item-link-svg {
       width: 32px;
 
       background-image: url("../img/promo-arrow-hover.svg");
@@ -211,7 +197,7 @@
   }
 
   .page-advantages__item-link:active {
-    .page-advantages__item-link--svg {
+    .page-advantages__item-link-svg {
       opacity: 0.3;
     }
     color: rgba(0, 0, 0, 0.3);
@@ -302,12 +288,9 @@
 
   .page-advantages__item-link {
     margin-bottom: 0;
-
-    font-size: 20px;
-    line-height: 20px;
   }
 
-  .page-advantages__item-link--text {
+  .page-advantages__item-link-text {
     margin-right: 27px;
   }
 }

@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Oswald";
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-display: swap;
   src: local("Oswald Regular"),
     url("../fonts/oswaldregular.woff2") format("woff2"),
@@ -10,10 +10,38 @@
 
 @font-face {
   font-family: "Oswald";
-  font-style: bold;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
   font-display: swap;
   src: local("Oswald Medium"),
     url("../fonts/oswaldmedium.woff2") format("woff2"),
     url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+@mixin font-group1 ($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin font-group2 ($size, $height, $family, $spacing) {
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+  font-family: $family;
+  letter-spacing: $spacing;
+}
+
+@mixin font-group3 ($size, $height, $family,) {
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+  font-family: $family;
+}
+
+@mixin font-group4 ($size, $height, $family, $transform) {
+  font-style: normal;
+  font-size: $size;
+  line-height: $height;
+  font-family: $family;
+  text-transform: $transform;
 }

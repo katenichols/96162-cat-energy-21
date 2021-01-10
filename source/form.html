@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="wodth=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -15,9 +19,9 @@
             <div class="page-header__wrapper">
               <a class="page-header__logo" href="index.html" aria-label="Перейти на главную">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="../img/desktop-logo.svg">
-                  <source media="(min-width: 768px)" srcset="../img/tablet-logo.svg">
-                  <img class="page-header__logo-image" src="../img/mobile-logo.svg" width="190" height="38" alt="Cat Enegry">
+                  <source media="(min-width: 1440px)" srcset="img/desktop-logo.svg">
+                  <source media="(min-width: 768px)" srcset="img/tablet-logo.svg">
+                  <img class="page-header__logo-image" src="img/mobile-logo.svg" width="190" height="38" alt="Cat Enegry">
                 </picture>
                 </a>
                 <button class="page-header__menu-toggle page-header__menu-toggle--nojs" type="button">
@@ -27,17 +31,17 @@
               <nav class="main-nav main-nav--unvisible">
               <ul class="main-nav__list main-nav__list--form">
                 <li class="main-nav__list-item">
-                  <a class="main-nav__list-item--link" href="index.html" aria-label="Перейти на главную">
+                  <a class="main-nav__list-item-link" href="index.html" aria-label="Перейти на главную">
                     Главная
                   </a>
                 </li>
                 <li class="main-nav__list-item">
-                  <a class="main-nav__list-item--link" href="catalog.html" aria-label="Открыть каталог продукции">
+                  <a class="main-nav__list-item-link" href="catalog.html" aria-label="Открыть каталог продукции">
                     Каталог продукции
                   </a>
                 </li>
                 <li class="main-nav__list-item main-nav__list-item--active">
-                  <a class="main-nav__list-item--link" href="form.html" aria-label="Подобрать программу">
+                  <a class="main-nav__list-item-link" href="form.html" aria-label="Подобрать программу">
                     Подбор программы
                   </a>
                 </li>
@@ -50,9 +54,9 @@
 
       <main>
         <div class="container">
-          <div class="page-form-titles__wrapper-device">
-            <h1 class="page-form__title">Подбор программы</h1>
-            <p class="page-form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+          <div class="page-form-titles-wrapper-device">
+            <h1 class="page-form-title">Подбор программы</h1>
+            <p class="page-form-text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
           </div>
         </div>
 
@@ -103,15 +107,15 @@
                     <li class="page-form__fieldset-list-item list-contacts__item">
                       <label class="list-contacts__item-label page-form__label" for="client-email">E-mail:*</label>
                       <input class="list-contacts__item-input list-contacts__item-input--first page-form__input" type="email" name="client-email" id="client-email" placeholder="kuklachev@gmail.com" aria-label="Введите email">
-                      <svg class="list-contacts__item-svg--email" width="19" height="14" viewBox="0 0 19 14" fill="none" stroke="#222222">
-                        <use xlink:href="img/icons/sprite.svg#icon_email"></use>
+                      <svg class="list-contacts__item-svg list-contacts__item-svg--email" width="19" height="14" viewBox="0 0 19 14" fill="none" stroke="#222222">
+                        <use xlink:href="img/sprite.svg#icon_email"></use>
                       </svg>
                     </li>
                     <li class="page-form__fieldset-list-item list-contacts__item">
                       <label class="list-contacts__item-label page-form__label" for="client-phone">Телефон:*</label>
                       <input class="list-contacts__item-input list-contacts__item-input--last page-form__input" type="tel" name="client-phone" id="client-phone" placeholder="8 (960) 900-60-90" aria-label="Введите номер телефона">
-                      <svg class="list-contacts__item-svg--phone" width="20" height="20" viewBox="0 0 20 20" fill="black">
-                        <use xlink:href="img/icons/sprite.svg#icon-phone"></use>
+                      <svg class="list-contacts__item-svg list-contacts__item-svg--phone" width="20" height="20" viewBox="0 0 20 20" fill="black">
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
                       </svg>
                     </li>
                   </ul>
@@ -119,7 +123,7 @@
 
                 <fieldset class="page-form__fieldset">
                   <legend class="page-form__fieldset-legend page-form__fieldset-legend--textarea">Комментарий</legend>
-                  <textarea class="page-form__textarea" placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите обо всех повадках кота"></textarea>
+                  <textarea class="page-form__fieldset-textarea" placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите обо всех повадках кота"></textarea>
                 </fieldset>
 
                 <fieldset class="page-form__fieldset">
@@ -166,7 +170,8 @@
               </div>
             </div>
           </div>
-          <div class="page-contacts__map"></div>
+          <div class="page-contacts__map page-contacts__map--nojs">
+          </div>
         </section>
       </main>
 
@@ -175,8 +180,8 @@
           <div class="page-footer__wrapper-device">
             <div class="page-footer__logo">
               <a class="page-footer__logo-link" href="index.html" aria-label="Перейти на главную">
-                <svg  class="page-footer__logo-link--svg" viewbox="0 0 128 24" width="128" height="24" fill="#111111">
-                  <use xlink:href="img/icons/sprite.svg#footer-logo"></use>
+                <svg  class="page-footer__logo-link-svg" viewbox="0 0 128 24" width="128" height="24" fill="#111111">
+                  <use xlink:href="img/sprite.svg#footer-logo"></use>
                 </svg>
               </a>
             </div>
@@ -184,22 +189,22 @@
               <ul class="page-footer__social-media-list social-media-list">
                 <li class="social-media-list__item social-media-list__item--vk">
                   <a class="social-media-list__item-link" href="https://vk.com" target="blank" aria-label="Перейти во Вконтакте">
-                    <svg class="social-media-list__item-link--icon-vk" viewBox="0 0 23 16" width="23" height="16" fill="#666666">
-                      <use xlink:href="img/icons/sprite.svg#icon_vkontakte"></use>
+                    <svg class="social-media-list__item-link-icon social-media-list__item-link-icon--vk" viewBox="0 0 23 16" width="23" height="16" fill="#666666">
+                      <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-media-list__item social-media-list__item--insta">
                   <a class="social-media-list__item-link" href="https://instagram.com" target="blank" aria-label="Перейти в Инстаграм">
-                    <svg class="social-media-list__item-link--icon-insta" viewbox="0 0 16 16" width="16" height="16" fill="#666666">
-                      <use xlink:href="img/icons/sprite.svg#icon_instagram"></use>
+                    <svg class="social-media-list__item-link-icon social-media-list__item-link-icon--insta" viewbox="0 0 16 16" width="16" height="16" fill="#666666">
+                      <use xlink:href="img/sprite.svg#icon_instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-media-list__item social-media-list__item--fb">
                   <a class="social-media-list__item-link" href="https://facebook.com" target="blank" aria-label="Перейти в Фейсбук">
-                    <svg class="social-media-list__item-link--icon-fb" viewbox="0 0 22 22" width="22" height="22" fill="none" stroke="#666666">
-                      <use xlink:href="img/icons/sprite.svg#icon_facebook"></use>
+                    <svg class="social-media-list__item-link-icon social-media-list__item-link-icon--fb" viewbox="0 0 22 22" width="22" height="22" fill="none" stroke="#666666">
+                      <use xlink:href="img/sprite.svg#icon_facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -208,8 +213,8 @@
             <div class="page-footer__copyright">
               <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="blank" aria-label="Перейти на сайт разработчика Html-academy">
                 <span>HTML Academy</span>
-                  <svg class="page-footer__copyright-link--svg" viewbox="0 0 27 34" width="27" height="34" fill="#666666">
-                    <use xlink:href="img/icons/sprite.svg#icon-htmlacademy"></use>
+                  <svg class="page-footer__copyright-link-svg" viewbox="0 0 27 34" width="27" height="34" fill="#666666">
+                    <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
                   </svg>
               </a>
             </div>
@@ -217,27 +222,6 @@
         </div>
       </footer>
     </div>
-
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var buttonToggle = document.querySelector('.page-header__menu-toggle');
-
-      buttonToggle.classList.remove('page-header__menu-toggle--nojs');
-      buttonToggle.classList.add('page-header__menu-toggle--closed');
-
-      buttonToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--visible')) {
-          buttonToggle.classList.remove('page-header__menu-toggle--opened');
-          buttonToggle.classList.add('page-header__menu-toggle--closed');
-          navMain.classList.remove('main-nav--visible');
-          navMain.classList.add('main-nav--unvisible');
-        } else {
-          buttonToggle.classList.remove('page-header__menu-toggle--closed');
-          buttonToggle.classList.add('page-header__menu-toggle--opened');
-          navMain.classList.remove('main-nav--unvisible');
-          navMain.classList.add('main-nav--visible');
-        }
-      });
-    </script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

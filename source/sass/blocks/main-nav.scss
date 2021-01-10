@@ -8,12 +8,8 @@
   margin-bottom: 0;
   padding: 0;
 
-  font-style: normal;
-  font-size: 20px;
-  line-height: 20px;
-  font-family: "Oswald", sans-serif;
+  @include font-group4($font-20, $line-20, $family-full, $transform-up);
   text-align: center;
-  text-transform: uppercase;
   color: $basic-black;
 }
 
@@ -31,15 +27,15 @@
   border-bottom: 1px solid $border-line-color;
 }
 
-.main-nav__list-item--link {
+.main-nav__list-item-link {
   color: $basic-black;
 }
 
-.main-nav__list-item--link:hover {
+.main-nav__list-item-link:hover {
   opacity: 0.6;
 }
 
-.main-nav__list-item--link:active {
+.main-nav__list-item-link:active {
   opacity: 0.3;
 }
 
@@ -66,8 +62,7 @@
     height: 32px;
     margin-top: 18px;
 
-    font-size: 18px;
-    line-height: 24px;
+    @include font-group1($font-18, $line-24);
   }
 
   .main-nav__list-item {
@@ -99,8 +94,7 @@
     width: 478px;
     margin-top: 16px;
 
-    font-size: 20px;
-    line-height: 26px;
+    @include font-group1($font-20, $line-26);
   }
 
   .main-nav__list--form,
@@ -121,7 +115,7 @@
     border-bottom: 2px solid $basic-white;
   }
 
-  .main-nav__list-item--link-index {
+  .main-nav__list-item-link--index {
     color: $basic-white;
   }
 }

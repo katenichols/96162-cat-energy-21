@@ -69,11 +69,7 @@
   width: 38px;
   height: 30px;
 
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
+  @include font-group4($font-16, $line-20, $family-full, $transform-up);
   color: $basic-black;
 }
 
@@ -83,22 +79,16 @@
   width: 84px;
   height: 14px;
   margin-top: 3px;
-
-  background-color: $basic-white;
-  border: 1px solid $light-darken-color;
-  border-radius: 5px;
 }
 
-.slider-block__separator {
-  position: absolute;
-  top: 3px;
-  left: 5px;
+.slider-block__control {
+  position: relative;
 
-  width: 35px;
-  height: 6px;
+  width: 84px;
+  height: 14px;
 
-  background-color: $basic-color;
-  border-radius: 3px;
+  background-image: url("../img/mobile-slider-control.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -160,7 +150,6 @@
     padding-top: 0;
 
     font-size: 20px;
-    line-height: 20px;
 
     border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   }
@@ -172,61 +161,37 @@
 
     background-color: $slider-scale-color;
     border-color: $slider-scale-color;
+    border-radius: 6px;
   }
 
-  .slider-block__separator {
-    top: -3px;
-    left: 210px;
-
-    width: 8px;
-    height: 8px;
-
-    background-color: $basic-color;
-    border-radius: 8px;
-  }
-
-  .slider-block__separator-border-1 {
+  .slider-block__control {
     position: absolute;
+
     top: -16px;
-    left: 197px;
+    left: 195px;
 
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
 
-    background-color: $light-darken-color;
-    border-radius: 34px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    background-image: url("../img/tablet-slider-control.svg");
   }
 
-  .slider-block__separator-border-1:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+  .slider-block__control:hover {
+    left: 194px;
+
+    width: 42px;
+    height: 42px;
+
+    background-image: url("../img/tablet-slider-control-hover.svg");
   }
 
-  .slider-block__separator-border-1:active {
-    background-color: $basic-color;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  }
+  .slider-block__control:active {
+    left: 193px;
 
-  .slider-block__separator-border-2 {
-    position: absolute;
-    top: -15px;
-    left: 198px;
+    width: 44px;
+    height: 44px;
 
-    width: 32px;
-    height: 32px;
-
-    background-color: $basic-white;
-    border-radius: 32px;
-  }
-
-  .slider-block__slider-before:hover,
-  .slider-block__slider-after:hover {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  }
-
-  .slider-block__slider-before:active,
-  .slider-block__slider-after:active {
-    border-bottom: 0;
+    background-image: url("../img/tablet-slider-control-active.svg");
   }
 }
 

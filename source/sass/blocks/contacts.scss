@@ -15,20 +15,13 @@
   margin-bottom: 27px;
   margin-left: -1px;
 
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
+  @include font-group4($font-16, $line-20, $family-full, $transform-up);
   color: $special-black;
 }
 
 .contacts__items-street,
 .contacts__items-sity {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
-  font-family: "Arial", sans-serif;
+  @include font-group3($font-14, $line-20, $family-once);
   color: $special-color;
 }
 
@@ -45,8 +38,7 @@
     margin-top: 2px;
     margin-bottom: 0;
 
-    font-size: 20px;
-    line-height: 24px;
+    @include font-group1($font-20, $line-24);
   }
 
   .contacts__wrapper {
@@ -63,8 +55,7 @@
 
   .contacts__items-street,
   .contacts__items-sity {
-    font-size: 16px;
-    line-height: 20px;
+    @include font-group1($font-16, $line-20);
     align-self: flex-end;
   }
 

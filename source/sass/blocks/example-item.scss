@@ -8,12 +8,8 @@
   height: 57px;
   padding-top: 13px;
 
-  font-style: normal;
-  font-size: 24px;
-  line-height: 24px;
-  font-family: "Oswald", sans-serif;
+  @include font-group4($font-24, $line-24, $family-full, $transform-up);
   color: $basic-black;
-  text-transform: uppercase;
 
   border: 1px solid $light-darken-color;
   border-radius: 3px;
@@ -27,11 +23,7 @@
   width: 82px;
   height: 19px;
 
-  font-style: normal;
-  font-size: 12px;
-  line-height: 12px;
-  font-family: "Arial", sans-serif;
-  text-transform: lowercase;
+  @include font-group4($font-12, $line-12, $family-once, $transform-low);
   color: $special-color;
 
   background-color: $exception-color;
@@ -43,8 +35,7 @@
     height: 72px;
     padding-top: 14px;
 
-    font-size: 30px;
-    line-height: 37px;
+    @include font-group1($font-30, $line-37);
   }
 
   .example-item__text {
@@ -54,8 +45,7 @@
     height: 19px;
     left: 24px;
 
-    font-size: 14px;
-    line-height: 14px;
+    @include font-group1($font-14, $line-14);
 
     background-color: $basic-white;
   }

@@ -46,10 +46,7 @@
   margin-bottom: 25px;
   margin-left: auto;
 
-  font-style: bold;
-  font-size: 36px;
-  line-height: 36px;
-  font-family: "Oswald", sans-serif;
+  @include font-group3($font-36, $line-36, $family-full);
   font-weight: normal;
   text-align: center;
   color: $basic-white;
@@ -57,13 +54,9 @@
 
 .page-promo__text,
 .page-promo__link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 14px;
-  font-family: "Oswald", sans-serif;
+  @include font-group4($font-14, $line-14, $family-full, $transform-up);
   font-weight: normal;
   text-align: center;
-  text-transform: uppercase;
   color: $basic-white;
 }
 
@@ -136,8 +129,7 @@
     margin-bottom: 41px;
     margin-left: 87px;
 
-    font-size: 60px;
-    line-height: 60px;
+    @include font-group1($font-60, $line-60);
     text-align: left;
     color: $basic-black;
   }
@@ -149,8 +141,7 @@
     margin-bottom: 0;
     margin-left: 88px;
 
-    font-size: 20px;
-    line-height: 20px;
+    @include font-group1($font-20, $line-20);
     text-align: left;
     color: $basic-black;
   }
@@ -162,8 +153,7 @@
     padding-top: 17px;
     padding-bottom: 0;
 
-    font-size: 20px;
-    line-height: 20px;
+    @include font-group1($font-20, $line-20);
   }
 
   .page-promo__image {
@@ -194,10 +184,11 @@
     z-index: -2;
 
     display: block;
-    width: 720px;
+    width: 50%;
     height: 694px;
     background-image: url("../img/desktop-promo-background.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/desktop-promo-background@2x.jpg");

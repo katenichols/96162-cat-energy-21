@@ -1,4 +1,4 @@
-.page-form-titles__wrapper-device {
+.page-form-titles-wrapper-device {
   position: relative;
 
   display: block;
@@ -9,7 +9,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-form-titles__wrapper-device {
+  .page-form-titles-wrapper-device {
     grid-column: span 4;
 
     padding-top: 62px;
@@ -20,7 +20,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-form-titles__wrapper-device {
+  .page-form-titles-wrapper-device {
     padding-top: 75px;
     padding-left: 0;
   }

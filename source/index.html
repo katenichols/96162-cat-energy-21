@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="wodth=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -15,9 +19,9 @@
             <div class="page-header__wrapper">
               <a class="page-header__logo" href="index.html" aria-label="Перейти на главную">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="../img/desktop-logo.svg">
-                  <source media="(min-width: 768px)" srcset="../img/tablet-logo.svg">
-                  <img class="page-header__logo-image" src="../img/mobile-logo.svg" width="190" height="38" alt="Cat Enegry">
+                  <source media="(min-width: 1440px)" srcset="img/desktop-logo.svg">
+                  <source media="(min-width: 768px)" srcset="img/tablet-logo.svg">
+                  <img class="page-header__logo-image" src="img/mobile-logo.svg" width="190" height="38" alt="Cat Enegry">
                 </picture>
                 </a>
               <button class="page-header__menu-toggle page-header__menu-toggle--nojs" type="button">
@@ -27,17 +31,17 @@
             <nav class="main-nav main-nav--unvisible">
               <ul class="main-nav__list">
                 <li class="main-nav__list-item main-nav__list-item--active main-nav__list-item--active-index">
-                  <a class="main-nav__list-item--link main-nav__list-item--link-index" href="index.html" aria-label="Перейти на главную">
+                  <a class="main-nav__list-item-link main-nav__list-item-link--index" href="index.html" aria-label="Перейти на главную">
                     Главная
                   </a>
                 </li>
                 <li class="main-nav__list-item">
-                  <a class="main-nav__list-item--link main-nav__list-item--link-index" href="catalog.html" aria-label="Открыть каталог продукции">
+                  <a class="main-nav__list-item-link main-nav__list-item-link--index" href="catalog.html" aria-label="Открыть каталог продукции">
                     Каталог продукции
                   </a>
                 </li>
                 <li class="main-nav__list-item main-nav__list-item--index">
-                  <a class="main-nav__list-item--link main-nav__list-item--link-index" href="form.html" aria-label="Подобрать программу">
+                  <a class="main-nav__list-item-link main-nav__list-item-link--index" href="form.html" aria-label="Подобрать программу">
                     Подбор программы
                   </a>
                 </li>
@@ -69,26 +73,26 @@
               <h2 class="visually-hidden">Преимущества</h2>
               <article class="page-advantages__item">
                 <div class="page-advantages__item-wrapper-first">
-                  <img class="page-advantages__item-image page-advantages__item-image--first" src="../img/advantages-image1.svg" width="51" height="54" alt="">
+                  <img class="page-advantages__item-image page-advantages__item-image--first" src="img/advantages-image1.svg" width="51" height="54" alt="">
                   <h3 class="page-advantages__item-title">Похудение</h3>
                 </div>
                 <p class="page-advantages__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <div class="page-advantages__item-separator"></div>
                 <a class="page-advantages__item-link" href="catalog.html" aria-label="Открыть каталог продуктов серии Slim">
-                  <span class="page-advantages__item-link--text">Каталог Slim</span>
-                  <span class="page-advantages__item-link--svg"></span>
+                  <span class="page-advantages__item-link-text">Каталог Slim</span>
+                  <span class="page-advantages__item-link-svg"></span>
                 </a>
               </article>
               <article class="page-advantages__item">
                 <div class="page-advantages__item-wrapper-last">
-                  <img class="page-advantages__item-image page-advantages__item-image--last" src="../img/advantages-image2.svg" width="67" height="50" alt="">
+                  <img class="page-advantages__item-image page-advantages__item-image--last" src="img/advantages-image2.svg" width="67" height="50" alt="">
                   <h3 class="page-advantages__item-title">Набор массы</h3>
                 </div>
                 <p class="page-advantages__item-text page-advantages__item-text--last">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
                 <div class="page-advantages__item-separator"></div>
                 <a class="page-advantages__item-link" href="catalog.html" aria-label="Открыть каталог продуктов серии Slim">
-                  <span class="page-advantages__item-link--text">Каталог Pro</span>
-                  <span class="page-advantages__item-link--svg"></span>
+                  <span class="page-advantages__item-link-text">Каталог Pro</span>
+                  <span class="page-advantages__item-link-svg"></span>
                 </a>
               </article>
             </div>
@@ -99,31 +103,31 @@
           <div class="container">
             <h3 class="page-features__title">Как это работает</h3>
             <ul class="page-features__list">
-              <li class="page-feature__list-item feature-item">
+              <li class="page-features__list-item feature-item">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="../img/tablet-features-image1.svg">
-                  <img class="feature-item__svg" src="../img/mobile-features-image1.svg" width="60" height="60" alt="">
+                  <source media="(min-width: 768px)" srcset="img/tablet-features-image1.svg">
+                  <img class="feature-item__svg" src="img/mobile-features-image1.svg" width="60" height="60" alt="">
                 </picture>
                 <p class="feature-item__text">Функциональное питание содержит только полезные питательные вещества. </p>
               </li>
-              <li class="page-feature__list-item feature-item">
+              <li class="page-features__list-item feature-item">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="../img/tablet-features-image2.svg">
-                  <img class="feature-item__svg" src="../img/mobile-features-image2.svg" width="60" height="60" alt="">
+                  <source media="(min-width: 768px)" srcset="img/tablet-features-image2.svg">
+                  <img class="feature-item__svg" src="img/mobile-features-image2.svg" width="60" height="60" alt="">
                 </picture>
                 <p class="feature-item__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
               </li>
-              <li class="page-feature__list-item feature-item">
+              <li class="page-features__list-item feature-item">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="../img/tablet-features-image3.svg">
-                  <img class="feature-item__svg" src="../img/mobile-features-image3.svg" width="60" height="60" alt="">
+                  <source media="(min-width: 768px)" srcset="img/tablet-features-image3.svg">
+                  <img class="feature-item__svg" src="img/mobile-features-image3.svg" width="60" height="60" alt="">
                 </picture>
                 <p class="feature-item__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
               </li>
-              <li class="page-feature__list-item feature-item">
+              <li class="page-features__list-item feature-item">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="../img/tablet-features-image4.svg">
-                  <img class="feature-item__svg" src="../img/mobile-features-image4.svg" width="60" height="60" alt="">
+                  <source media="(min-width: 768px)" srcset="img/tablet-features-image4.svg">
+                  <img class="feature-item__svg" src="img/mobile-features-image4.svg" width="60" height="60" alt="">
                 </picture>
                 <p class="feature-item__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
               </li>
@@ -132,6 +136,7 @@
         </section>
 
         <section class="page-example">
+          <div class="page-example__background"></div>
           <div class="container">
             <div class="page-example__wrapper-device">
               <div class="page-example__wrapper">
@@ -150,7 +155,7 @@
                   </ul>
                   <div class="page-example__conclude-wrapper">
                     <p class="page-example__conclude-left">Затраты на питание:</p>
-                    <p class="page-example__conclude-right">&nbsp15 000 руб.</p>
+                    <p class="page-example__conclude-right">&nbsp;15 000 руб.</p>
                   </div>
                 </div>
               </div>
@@ -165,9 +170,8 @@
                   <div class="slider-block__slider">
                     <span class="slider-block__slider-before">Было</span>
                     <div class="slider-block__toggle">
-                      <div class="slider-block__separator-border-1"></div>
-                      <div class="slider-block__separator-border-2"></div>
-                      <div class="slider-block__separator"></div>
+                      <div class="slider-block__control">
+                      </div>
                     </div>
                     <span class="slider-block__slider-after">Стало</span>
                   </div>
@@ -190,7 +194,8 @@
               </div>
             </div>
           </div>
-          <div class="page-contacts__map"></div>
+          <div class="page-contacts__map page-contacts__map--nojs">
+          </div>
         </section>
       </main>
 
@@ -199,8 +204,8 @@
           <div class="page-footer__wrapper-device">
             <div class="page-footer__logo">
               <a class="page-footer__logo-link" href="index.html" aria-label="Перейти на главную">
-                <svg  class="page-footer__logo-link--svg" viewbox="0 0 128 24" width="128" height="24" fill="#111111">
-                  <use xlink:href="img/icons/sprite.svg#footer-logo"></use>
+                <svg  class="page-footer__logo-link-svg" viewbox="0 0 128 24" width="128" height="24" fill="#111111">
+                  <use xlink:href="img/sprite.svg#footer-logo"></use>
                 </svg>
               </a>
             </div>
@@ -208,22 +213,22 @@
               <ul class="page-footer__social-media-list social-media-list">
                 <li class="social-media-list__item social-media-list__item--vk">
                   <a class="social-media-list__item-link" href="https://vk.com" target="blank" aria-label="Перейти во Вконтакте">
-                    <svg class="social-media-list__item-link--icon-vk" viewBox="0 0 23 16" width="23" height="16" fill="#666666">
-                      <use xlink:href="img/icons/sprite.svg#icon_vkontakte"></use>
+                    <svg class="social-media-list__item-link-icon social-media-list__item-link-icon--vk" viewBox="0 0 23 16" width="23" height="16" fill="#666666">
+                      <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-media-list__item social-media-list__item--insta">
                   <a class="social-media-list__item-link" href="https://instagram.com" target="blank" aria-label="Перейти в Инстаграм">
-                    <svg class="social-media-list__item-link--icon-insta" viewbox="0 0 16 16" width="16" height="16" fill="#666666">
-                      <use xlink:href="img/icons/sprite.svg#icon_instagram"></use>
+                    <svg class="social-media-list__item-link-icon social-media-list__item-link-icon--insta" viewbox="0 0 16 16" width="16" height="16" fill="#666666">
+                      <use xlink:href="img/sprite.svg#icon_instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-media-list__item social-media-list__item--fb">
                   <a class="social-media-list__item-link" href="https://facebook.com" target="blank" aria-label="Перейти в Фейсбук">
-                    <svg class="social-media-list__item-link--icon-fb" viewbox="0 0 22 22" width="22" height="22" fill="none" stroke="#666666">
-                      <use xlink:href="img/icons/sprite.svg#icon_facebook"></use>
+                    <svg class="social-media-list__item-link-icon social-media-list__item-link-icon--fb" viewbox="0 0 22 22" width="22" height="22" fill="none" stroke="#666666">
+                      <use xlink:href="img/sprite.svg#icon_facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -232,8 +237,8 @@
             <div class="page-footer__copyright">
               <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="blank" aria-label="Перейти на сайт разработчика Html-academy">
                 <span>HTML Academy</span>
-                  <svg class="page-footer__copyright-link--svg" viewbox="0 0 27 34" width="27" height="34" fill="#666666">
-                    <use xlink:href="img/icons/sprite.svg#icon-htmlacademy"></use>
+                  <svg class="page-footer__copyright-link-svg" viewbox="0 0 27 34" width="27" height="34" fill="#666666">
+                    <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
                   </svg>
               </a>
             </div>
@@ -241,27 +246,6 @@
         </div>
       </footer>
     </div>
-
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var buttonToggle = document.querySelector('.page-header__menu-toggle');
-
-      buttonToggle.classList.remove('page-header__menu-toggle--nojs');
-      buttonToggle.classList.add('page-header__menu-toggle--closed');
-
-      buttonToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--visible')) {
-          buttonToggle.classList.remove('page-header__menu-toggle--opened');
-          buttonToggle.classList.add('page-header__menu-toggle--closed');
-          navMain.classList.remove('main-nav--visible');
-          navMain.classList.add('main-nav--unvisible');
-        } else {
-          buttonToggle.classList.remove('page-header__menu-toggle--closed');
-          buttonToggle.classList.add('page-header__menu-toggle--opened');
-          navMain.classList.remove('main-nav--unvisible');
-          navMain.classList.add('main-nav--visible');
-        }
-      });
-    </script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

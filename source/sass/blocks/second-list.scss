@@ -32,19 +32,12 @@
   width: 100%;
   margin-bottom: 13px;
 
-  font-style: normal;
-  font-size: 16px;
-  line-height: 16px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
+  @include font-group4($font-16, $line-16, $family-full, $transform-up);
   color: $special-darken-color;
 }
 
 .second-list__item-text {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 14px;
-  font-family: "Arial", sans-serif;
+  @include font-group3($font-14, $line-14, $family-once);
   color: $special-color;
 }
 
@@ -94,13 +87,11 @@
     width: auto;
     margin-bottom: 0;
 
-    font-size: 20px;
-    line-height: 20px;
+    @include font-group1($font-20, $line-20);
   }
 
   .second-list__item-text {
-    font-size: 16px;
-    line-height: 20px;
+    @include font-group1($font-16, $line-20);
   }
 
   .second-list__item-button {

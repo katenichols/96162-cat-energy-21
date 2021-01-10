@@ -10,21 +10,21 @@
   padding-left: 73px;
 }
 
-.social-media-list__item-link--icon-vk:hover,
-.social-media-list__item-link--icon-insta:hover {
+.social-media-list__item-link-icon--vk:hover,
+.social-media-list__item-link-icon--insta:hover {
   fill: $basic-color;
 }
 
-.social-media-list__item-link--icon-vk:active,
-.social-media-list__item-link--icon-insta:active {
+.social-media-list__item-link-icon--vk:active,
+.social-media-list__item-link-icon--insta:active {
   fill-opacity: 0.3;
 }
 
-.social-media-list__item-link--icon-fb:hover {
+.social-media-list__item-link-icon--fb:hover {
   stroke: $basic-color;
 }
 
-.social-media-list__item-link--icon-fb:active {
+.social-media-list__item-link-icon--fb:active {
   stroke-opacity: 0.3;
 }
 
@@ -38,17 +38,17 @@
     padding: 0;
   }
 
-  .social-media-list__item-link--icon-vk {
+  .social-media-list__item-link-icon--vk {
     width: 30px;
     height: 22px;
   }
 
-  .social-media-list__item-link--icon-insta {
+  .social-media-list__item-link-icon--insta {
     width: 23px;
     height: 23px;
   }
 
-  .social-media-list__item-link--icon-fb {
+  .social-media-list__item-link-icon--fb {
     width: 28px;
     height: 33px;
   }
@@ -60,7 +60,7 @@
     margin-top: 0;
   }
 
-  .social-media-list__item-link--icon-insta {
+  .social-media-list__item-link-icon--insta {
     margin-left: 6px;
   }
 }

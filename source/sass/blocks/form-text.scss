@@ -3,11 +3,7 @@
   margin-top: 0;
   margin-bottom: 39px;
 
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
+  @include font-group4($font-14, $line-18, $family-full, $transform-up);
   color: $basic-black;
 }
 
@@ -16,7 +12,6 @@
     width: 323px;
     margin-bottom: 66px;
 
-    font-size: 20px;
-    line-height: 30px;
+    @include font-group1($font-20, $line-30);
   }
 }

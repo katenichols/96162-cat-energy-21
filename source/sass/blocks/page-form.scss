@@ -14,26 +14,18 @@
   padding-bottom: 32px;
 }
 
-.page-form__title {
+.page-form-title {
   margin-top: 0;
   margin-bottom: 37px;
 
-  font-style: normal;
-  font-size: 36px;
-  line-height: 36px;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: -1px;
+  @include font-group2($font-36, $line-36, $family-full, $spacing-1);
   color: $basic-black;
 }
 
-.page-form__text {
+.page-form-text {
   margin: 0;
 
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
+  @include font-group4($font-14, $line-18, $family-full, $transform-up);
   color: $basic-black;
 }
 
@@ -47,10 +39,7 @@
   margin: 0;
   padding: 0;
 
-  font-style: normal;
-  font-size: 24px;
-  line-height: 26px;
-  font-family: "Oswald", sans-serif;
+  @include font-group3($font-24, $line-26, $family-full);
   color: $basic-black;
 
   border: 0;
@@ -68,10 +57,7 @@
   margin-left: -20px;
   padding-left: 20px;
 
-  font-style: normal;
-  font-size: 24px;
-  line-height: 26px;
-  font-family: "Oswald", sans-serif;
+  @include font-group3($font-24, $line-26, $family-full);
   color: $basic-black;
 
   background-color: $basic-white;
@@ -96,16 +82,12 @@
 
 .page-form__input,
 .page-form__label {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
+  @include font-group4($font-16, $line-18, $family-full, $transform-up);
   color: $special-color;
 }
 
 .page-form__input:focus,
-.page-form__textarea:focus {
+.page-form__fieldset-textarea:focus {
   border-color: $special-color;
 }
 
@@ -113,7 +95,7 @@
   border-color: $error-color;
 }
 
-.page-form__textarea {
+.page-form__fieldset-textarea {
   grid-column: span 2;
   width: 100%;
   height: 151px;
@@ -122,11 +104,7 @@
   padding-top: 9px;
   padding-left: 15px;
 
-  font-style: normal;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
+  @include font-group4($font-16, $line-18, $family-full, $transform-up);
   color: $special-color;
 
   border: 1px solid $input-border-color;
@@ -142,14 +120,18 @@
   height: 40px;
   margin-bottom: 21px;
 
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
+  @include font-group4($font-16, $line-20, $family-full, $transform-up);
   color: $basic-white;
 
   background-color: $basic-color;
+}
+
+.page-form__button:hover {
+  background-color: $basic-darken-color;
+}
+
+.page-form__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .page-form__note {
@@ -161,10 +143,7 @@
   margin-left: auto;
   text-align: center;
 
-  font-style: normal;
-  font-size: 14px;
-  line-height: 16px;
-  font-family: "Arial", sans-serif;
+  @include font-group3($font-14, $line-16, $family-once);
   color: $basic-black;
 }
 
@@ -200,17 +179,14 @@
     padding-left: 40px;
   }
 
-  .page-form__title {
+  .page-form-title {
     margin-bottom: 55px;
 
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: -2px;
+    @include font-group2($font-60, $line-60, $family-full, $spacing-2);
   }
 
-  .page-form__text {
-    font-size: 20px;
-    line-height: 30px;
+  .page-form-text {
+    @include font-group1($font-20, $line-30);
   }
 
   .page-form__fieldsets-group {
@@ -227,8 +203,7 @@
     margin-left: -40px;
     padding-left: 40px;
 
-    font-size: 36px;
-    line-height: 36px;
+    @include font-group1($font-36, $line-36);
   }
 
   .page-form__fieldset-legend--contacts {
@@ -245,19 +220,17 @@
 
   .page-form__input,
   .page-form__label {
-    font-size: 20px;
-    line-height: 22px;
+    @include font-group1($font-20, $line-22);
   }
 
-  .page-form__textarea {
+  .page-form__fieldset-textarea {
     height: 174px;
     margin-top: 76px;
     margin-bottom: 63px;
     padding-top: 10px;
     padding-left: 18px;
 
-    font-size: 20px;
-    line-height: 30px;
+    @include font-group1($font-20, $line-30);
   }
 
   .page-form__button {
@@ -266,8 +239,7 @@
     height: 52px;
     margin-bottom: 0;
 
-    font-size: 20px;
-    line-height: 26px;
+    @include font-group1($font-20, $line-26);
   }
 
   .page-form__note {
@@ -278,7 +250,6 @@
     margin-left: 0;
 
     font-size: 16px;
-    line-height: 16px;
   }
 
   .page-form__line--contacts {
@@ -322,16 +293,13 @@
     width: 260px;
   }
 
-  .page-form__textarea {
+  .page-form__fieldset-textarea {
     margin-bottom: 65px;
   }
 
   .page-form__button {
     width: 568px;
     height: 52px;
-
-    font-size: 20px;
-    line-height: 26px;
   }
 
   .page-form__note {
