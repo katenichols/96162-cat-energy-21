@@ -23,8 +23,6 @@ buttonToggle.addEventListener("click", function() {
   }
 });
 
-exampleBackground.style.left = exampleBackgroundLeft + "px";
-
 pageContactsMap.classList.remove('page-contacts__map--nojs');
 pageContactsMap.appendChild(pageContactsMapiFrame);
 pageContactsMapiFrame.src = "https://yandex.ru/map-widget/v1/?um=constructor%3A2a890efad02f599ba6133f88531ccfde61104518a13840f0b2bd3ceb49299b92&amp;source=constructor";
@@ -33,3 +31,5 @@ pageContactsMapiFrame.height = "100%";
 pageContactsMapiFrame.style = "border:0";
 pageContactsMapiFrame.allowFullscreen = "";
 pageContactsMapiFrame.ariaHidden = false;
+
+exampleBackground.style.left = exampleBackgroundLeft + "px";

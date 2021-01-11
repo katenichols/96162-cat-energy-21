@@ -50,8 +50,6 @@
 }
 
 .list-programm__item-input:checked + .list-programm__item-label::before {
-  left: -1px;
-
   background-image: url("../img/mobile-form-radio-active.svg");
 }
 
@@ -88,6 +86,8 @@
   }
 
   .list-programm__item-input:checked + .list-programm__item-label::before {
+    left: -1px;
+
     background-image: url("../img/tablet-form-radio-active.svg");
   }
 
